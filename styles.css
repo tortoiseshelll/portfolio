@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: all;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#selection {
+    position: absolute;
+    border: 1px solid rgb(149, 190, 117);
+    background-color: rgba(156, 170, 150, 0.3);
+    display: none;
+    pointer-events: none;
+}
+
+.files {
+    position: absolute;
+    margin: 10px;
+    z-index: 0;
+
+}
+
+p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    color: white;
+    font-size: 14px;
+    margin-top: 6px;
+
+}
+
+.btn {
+    width: 10vh;
+    height: 10vh;
+    min-width: 60px;
+    min-height: 60px;
+
+    border-radius: 20px;
+    border-color: rgb(143, 161, 135);
+
+
+    position: relative;
+    display: block;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.file:hover,
+.selected {
+    background-color: rgba(227, 252, 255, 0.432);
+    border-radius: 10px;
+}
+
+.files div,
+#project1 {
+    margin: 25px;
+}
+
+
+#projects {
+    background-image: url(images/folder.png);
+}
+
+#aboutMe {
+    background-image: url(images/post-it.png);
+}
+
+#contact {
+    background-image: url(images/skype.png);
+}
+
+#bin {
+    background-image: url(images/recycle-bin.png);
+}
+
+
+
+
+.aboutInside {
+    position: absolute;
+    border: 2px solid rgb(46, 49, 43);
+    border-radius: 10px;
+
+    width: 100vh;
+    height: 70vh;
+    min-width: 400px;
+    min-height: 300px;
+
+    display: none;
+    z-index: 2;
+}
+
+#aboutInside {
+    top: 80px;
+    left: 80px;
+}
+
+.top {
+    background-color: rgba(216, 235, 203, 0.781);
+}
+
+.topBar {
+    position: relative;
+    width: 100%;
+    height: 25px;
+
+    display: flex;
+    justify-content: right;
+    margin-left: -10px;
+}
+
+.topBar button {
+    position: absolute;
+    top: 2px;
+    width: 25px;
+    z-index: 2;
+
+    background-color: transparent;
+    border-color: rgb(46, 49, 43);
+    border-radius: 3px;
+}
+
+.minimise,
+#minimise {
+    margin-right: 30px;
+}
+
+.drag {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 20px;
+}
+
+.editBar {
+    background-color: rgb(178, 190, 170);
+    position: relative;
+    width: 100%;
+    height: 25px;
+    border: 2px solid rgb(46, 49, 43);
+
+    align-content: center;
+
+    z-index: 2;
+}
+
+.editBar button {
+    margin-left: 10px;
+    background-color: transparent;
+    border-color: rgb(46, 49, 43);
+    border-radius: 3px;
+
+    width: 40px;
+    height: 20px;
+}
+
+.pages * {
+    position: absolute;
+    top: 5px;
+    border-radius: 5px;
+    width: 20%;
+    height: 24px;
+    border-top: 2px solid rgb(46, 49, 43);
+    border-right: 2px solid rgb(46, 49, 43);
+    border-left: 2px solid rgb(46, 49, 43);
+    border-bottom: none;
+}
+
+.page1 {
+    background-color: rgb(119, 131, 111);
+    left: 5%;
+
+    text-align: center;
+    color: rgb(85, 85, 85);
+}
+
+.page1:hover,
+.page2:hover {
+    background-color: rgb(178, 190, 170);
+}
+
+.page2 {
+    background-color: rgb(178, 190, 170);
+    left: 27%;
+    z-index: 3;
+
+    text-align: center;
+    color: rgb(85, 85, 85);
+}
+
+.active {
+    background-color: rgb(178, 190, 170);
+    z-index: 3;
+
+    text-align: center;
+    color: rgb(85, 85, 85);
+}
+
+.noActive {
+    background-color: rgb(119, 131, 111);
+    z-index: 1;
+}
+
+
+.aboutContent {
+    position: relative;
+    display: flex;
+    background-color: rgba(216, 235, 203, 0.781);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes {
+    position: relative;
+    background-color: rgb(243, 255, 240);
+    width: 97vh;
+    min-width: 385px;
+    height: 100%;
+    min-height: 230px;
+
+    overflow: auto;
+}
+
+h1 {
+    position: relative;
+    color: rgb(56, 58, 59);
+    top: 20px;
+    margin: 20px;
+    padding: 10px 20px 0px;
+}
+
+.content {
+    position: relative;
+    color: rgb(56, 58, 59);
+    top: 20px;
+    margin: 20px;
+    padding: 0 20px;
+
+
+    line-height: 2;
+    font-size: larger;
+}
+
+#cat {
+    line-height: 1;
+    display: none;
+}
+
+
+
+
+#projectsInside {
+    top: 150px;
+    left: 200px;
+}
+
+#projectsInside .page1 {
+    left: 1%;
+}
+
+#projectsInside .page2 {
+    left: 22%;
+}
+
+#projectsContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftBar {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(216, 235, 203, 0.781);
+    border-right: 2px solid rgb(46, 49, 43);
+
+}
+
+.projectsFiles {
+    width: 80%;
+    height: 100%;
+    background-color: rgba(216, 235, 203, 0.781);
+    display: block;
+}
+
+.projectsFiles .btn {
+    position: relative;
+}
+
+#project1Btn {
+    background-image: url(images/project1/1.png);
+    background-position: 50%;
+}
+
+.project1 {
+    position: absolute;
+    display: block;
+    min-height: 100px;
+    margin: 20px;
+}
+
+.project1 p {
+    position: relative;
+    line-height: 1;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+
+#plannerApp {
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    border: 2px solid rgb(46, 49, 43);
+
+    top: 60px;
+    left: 500px;
+    z-index: 3;
+}
+
+#plannerApp .topBar p {
+    position: absolute;
+    color: rgb(41, 44, 41);
+    left: 25px;
+}
+
+#plannerApp .topBar img {
+    position: relative;
+    top: -2;
+    left: -2;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+.insideProject {
+    position: relative;
+    width: 60vh;
+    height: 70vh;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: rgba(216, 235, 203, 0.781);
+    display: flex;
+    justify-content: center;
+}
+
+.notesProject {
+    position: relative;
+    background-color: rgb(243, 255, 240);
+    width: 56vh;
+    height: 100%;
+    min-width: 290px;
+    overflow: auto;
+
+    h1 {
+        display: flex;
+        justify-content: end;
+    }
+
+    p {
+        justify-content: left;
+    }
+
+}
+
+.notesProject p {
+    color: black;
+    top: 20px;
+    margin: 30px;
+    line-height: 2;
+
+    display: block;
+}
+
+.gifs {
+
+    display: flex;
+    justify-content: center;
+
+    img {
+        margin-top: 20px;
+        border-radius: 20px;
+        width: 60%;
+        -webkit-user-drag: none;
+    }
+
+}
+
+.gifs:last-child {
+    margin-bottom: 40px;
+}
+
+b {
+    color: rgb(153, 4, 4);
+}
+
+
+#contactInside {
+    position: absolute;
+    border: 2px solid rgb(46, 49, 43);
+    border-radius: 10px;
+
+    width: 80vh;
+    height: 60vh;
+    min-width: 400px;
+    min-height: 300px;
+    top: 150px;
+    left: 150px;
+
+    display: none;
+}
+
+#contactInside .topBar p {
+    position: absolute;
+    color: rgb(41, 44, 41);
+    left: 25px;
+}
+
+#contactInside .topBar img {
+    position: relative;
+    top: -2;
+    left: -2;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+.insideContact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSide {
+    width: 30%;
+    height: 100%;
+    background-color: rgba(226, 241, 255, 0.692);
+    border-right: 2px solid rgb(46, 49, 43);
+    border-top: 3px solid rgb(46, 49, 43);
+}
+
+.rightSide {
+    width: 70%;
+    height: 100%;
+    background-color: rgba(226, 241, 255, 0.692);
+    border-top: 3px solid rgb(46, 49, 43);
+    display: block;
+}
+
+
+
+
+
+.menuBar {
+    background: #9da892e3;
+    width: 100%;
+    height: 7vh;
+    min-height: 50px;
+
+    position: absolute;
+    bottom: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.menuBtn {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border-color: rgb(191, 207, 180);
+    width: 7vh;
+    min-width: 50px;
+    height: 100%;
+    margin-left: 5px;
+}
+
+#windows {
+    background-image: url(images/windows.png);
+    margin-right: 20px;
+}
+
+#menuAbout {
+    background-image: url(images/post-it.png);
+    display: none;
+}
+
+#menuProjects {
+    background-image: url(images/folder.png);
+    display: none;
+}
+
+#menuProject1 {
+    background-image: url(images/project1/1.png);
+    background-position: 50%;
+    display: none;
+}
+
+#menuContact {
+    background-image: url(images/skype.png);
+    display: none;
+}
+
+#explorer {
+    background-image: url(images/social.png);
+}
+
+#catGif {
+    position: absolute;
+    background-image: url(images/biscuits.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 14vh;
+    min-width: 70px;
+    min-height: 70px;
+    bottom: 7vh;
+    left: 80%;
+}
