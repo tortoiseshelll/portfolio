@@ -434,6 +434,8 @@ b {
     min-height: 300px;
     top: 150px;
     left: 150px;
+
+    display: none;
 }
 
 #contactInside .topBar p {
