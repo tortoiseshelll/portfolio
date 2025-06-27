@@ -13,13 +13,32 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section {
     position: relative;
     width: 100vw;
     height: 100vh;
+}
 
+#logInScreen {
+    position: relative;
+    border: 1px solid rgb(149, 190, 117);
+    background-color: rgba(46, 46, 46, 0.432);
+
+    display: flexbox;
+    justify-items: center;
+}
+
+#logIn {
+    margin-top: 80px;
+}
+
+#section {
     background-image: url(images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,6 +50,7 @@ section {
     background-color: rgba(156, 170, 150, 0.3);
     display: none;
     pointer-events: none;
+
 }
 
 .files {
@@ -108,7 +128,7 @@ p {
 
     width: 100vh;
     height: 70vh;
-    min-width: 400px;
+    min-width: 650px;
     min-height: 300px;
 
     display: none;
@@ -295,6 +315,34 @@ h1 {
     justify-content: space-between;
 }
 
+#projectsInside .editBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btns {
+    margin-top: 2px;
+}
+
+#searchBar {
+    min-width: 300px;
+    width: 360px;
+    /* margin-left: -100px; */
+    margin-top: 2px;
+    text-align: start;
+    padding-left: 30px;
+}
+
+#search {
+    width: 150px;
+    margin-left: 20px;
+    text-align: start;
+    padding-left: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+
 .leftBar {
     width: 20%;
     height: 100%;
@@ -430,8 +478,8 @@ b {
 
     width: 80vh;
     height: 60vh;
-    min-width: 400px;
-    min-height: 300px;
+    min-width: 500px;
+    min-height: 400px;
     top: 150px;
     left: 150px;
 
@@ -464,6 +512,21 @@ b {
     background-color: rgba(226, 241, 255, 0.692);
     border-right: 2px solid rgb(46, 49, 43);
     border-top: 3px solid rgb(46, 49, 43);
+    overflow: auto;
+}
+
+
+.names p {
+    margin: 15px;
+    height: 33px;
+    text-align: center;
+    color: rgb(109, 100, 100);
+    border-bottom: 1px solid rgb(120, 128, 113);
+}
+
+.names p:hover {
+    background-color: aliceblue;
+    border-radius: 10px;
 }
 
 .rightSide {
@@ -472,10 +535,33 @@ b {
     background-color: rgba(226, 241, 255, 0.692);
     border-top: 3px solid rgb(46, 49, 43);
     display: block;
+    justify-items: center;
+    overflow: auto;
 }
 
+#pfp {
+    height: 45%;
+    margin-top: 30px;
+}
+
+#name {
+    color: black;
+    font-size: 24;
+    margin-bottom: 40px;
+}
+
+.contactDetails {
+    color: rgb(109, 100, 100);
+    margin: 10px;
+    text-align: center;
 
 
+    span {
+        user-select: text;
+        color: black;
+        margin-left: 10px;
+    }
+}
 
 
 .menuBar {
@@ -534,15 +620,6 @@ b {
     background-image: url(images/social.png);
 }
 
-#catGif {
-    position: absolute;
-    background-image: url(images/biscuits.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 14vh;
-    min-width: 70px;
-    min-height: 70px;
-    bottom: 7vh;
-    left: 80%;
+#timeBtn {
+    width: 85px;
 }

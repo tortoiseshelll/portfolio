@@ -1,3 +1,5 @@
+const logIn = document.getElementById('logInScreen');
+
 const aboutBtn = document.getElementById('aboutMe');
 const aboutInside = document.getElementById('aboutInside');
 const closeBtn = document.getElementById('close');
@@ -38,6 +40,8 @@ const plannerApp = document.getElementById('plannerApp');
 const selection = document.getElementById('selection');
 const section = document.getElementById('section');
 
+let time = document.getElementById('time');
+
 let ZCount = 1;
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -47,6 +51,21 @@ document.addEventListener('DOMContentLoaded', function () {
     let sound = new Audio('/audio/click.wav');
     let startup = new Audio('/audio/startup.mp3');
     let skype = new Audio('/audio/skype.wav');
+
+    logIn.addEventListener('click', () => {
+        logIn.style.display = 'none';
+    })
+
+
+    setInterval(() => {
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+    }, 1000);
+
+    setInterval(() => {
+        let d = new Date();
+        date.innerHTML = d.toLocaleDateString();
+    }, 1000);
 
     closeBtn.addEventListener('click', () => {
         aboutInside.style.display = 'none';
@@ -65,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     closeBtn4.addEventListener('click', () => {
         contactInside.style.display = 'none';
-        // menuContact.style.display = 'none';
+        menuContact.style.display = 'none';
     });
 
 
@@ -86,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     minimise4.addEventListener('click', () => {
         contactInside.style.display = 'none';
-        // menuContact.style.display = 'inline-block';
+        menuContact.style.display = 'inline-block';
     });
 
 
@@ -100,6 +119,9 @@ document.addEventListener('DOMContentLoaded', function () {
     contact.addEventListener('dblclick', () => {
         skype.volume = 0.4;
         skype.play();
+
+        contactInside.style.display = 'block';
+        menuContact.style.display = 'inline-block';
         putToFront(contactInside);
     });
 
@@ -153,6 +175,15 @@ document.addEventListener('DOMContentLoaded', function () {
             putToFront(projectsInside);
         }
     });
+
+    menuContact.addEventListener('click', () => {
+        if (contactInside.style.display === 'block') {
+            contactInside.style.display = 'none';
+        } else {
+            contactInside.style.display = 'block';
+            putToFront(contactInside);
+        }
+    })
 
     menuProject1.addEventListener('click', () => {
         if (plannerApp.style.display === 'block') {

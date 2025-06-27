@@ -9,6 +9,19 @@
 </head>
 
 <body>
+    <section id="logInScreen">
+            <div id="logIn">
+                <img src="images/pfp.png" alt="profile picture" id="pfp">
+            </div>
+            <p id="name">Wiktoria Czuba</p>
+            <p>Click anywhere to Log In</p>
+        </div>
+    </section>
+
+
+
+
+
 
     <section id="section">
 
@@ -76,6 +89,8 @@
                                 I’m passionate about building things from
                                 scratch, experimenting with new technologies, and constantly expanding my skill set
                                 through new projects.
+                                <br>
+
                             </p>
                         </span>
                         <p id="cat" class="content">
@@ -143,9 +158,11 @@
                         <div class="drag"></div>
                     </div>
                     <div class="editBar">
-                        <button></button>
-                        <button></button>
-                        <button></button>
+                        <div id="btns"><button>&#8592;</button>
+                            <button>&#8594;</button>
+                        </div>
+                        <button id="searchBar">Desktop > Projects </button>
+                        <input id="search" placeholder="Search"></input>
                     </div>
                     <div class="pages">
                         <button class="page1">Downloads</button>
@@ -233,8 +250,26 @@
                 </div>
 
                 <div id="insideContact" class="aboutContent">
-                    <div class="leftSide"></div>
-                    <div class="rightSide"></div>
+                    <div class="leftSide">
+                        <div class="names">
+                            <p id="name">Wiktoria Czuba</p>
+                            <p>Alexander Sasha Novikov</p>
+                            <p>Zyanya Mondragón</p>
+                            <p>Sabine Callas</p>
+                            <p>Liam Byrne</p>
+                            <p>Ling Ying Wei</p>
+                            <p>Sunwoo Han</p>
+                            <p>Jamie Adeyemi</p>
+                        </div>
+                    </div>
+
+                    <div class="rightSide">
+                        <div><img src="images/pfp.png" alt="profile picture" id="pfp"></div>
+                        <p id="name">Wiktoria Czuba</p>
+                        <p class="contactDetails">Self-taught programmer ready to meet new challenges :)</p>
+                        <p class="contactDetails">E-mail: <span class="details"> wiktoria.czuba02@gmail.com</span></p>
+                        <p class="contactDetails">Phone: <span>+44 07543503352</span> </p>
+                    </div>
                 </div>
 
             </div>
@@ -243,7 +278,6 @@
 
 
 
-            <div id="catGif"></div>
             <div class="menuBar">
 
                 <div class="left">
@@ -257,7 +291,10 @@
                     <button id="menuContact" class="menuBtn"></button>
                 </div>
 
-                <button>a</button>
+                <button id="timeBtn" class="menuBtn">
+                    <p id="time"></p>
+                    <p id="date"></p>
+                </button>
             </div>
         </div>
 
