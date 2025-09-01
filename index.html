@@ -6,319 +6,252 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-    <section id="logInScreen">
-            <div id="logIn">
-                <img src="images/pfp.png" alt="profile picture" id="pfp">
-            </div>
-            <p id="name">Wiktoria Czuba</p>
-            <p>Click anywhere to Log In</p>
-        </div>
+
+    <!-- <section id="login-screen"> -->
+
     </section>
 
+    <section id="desktop-screen">
 
+        <div class="noSelect" id="files">
+            <button class="btn file" id="">
+                <img src="assets/icons/my_computer.png" alt="">
+                <p class="p">My Computer</p>
+            </button>
 
+            <button class="btn file" id="">
+                <img src="assets/icons/my_documents.png" alt="">
+                <p class="p">Documents</p>
+            </button>
 
+            <button class="btn file" id="">
+                <img src="assets/icons/netmeeting.png" alt="">
+                <p class="p">Contact</p>
+            </button>
 
+            <button class="btn file" id="">
+                <img src="assets/icons/notepad.png" alt="">
+                <p class="p">Notepad</p>
+            </button>
 
-    <section id="section">
+            <button class="btn file" id="">
+                <img src="assets/icons/internet_explorer.png" alt="">
+                <p class="p">Internet <br> Explorer</p>
+            </button>
 
-        <div class="selection"></div>
-
-        <div class="files noSelect">
-
-            <div class="file">
-                <button class="btn" id="aboutMe"></button>
-                <p>About me</p>
-            </div>
-
-            <div class="file">
-                <button class="btn" id="projects"></button>
-                <p>Projects</p>
-            </div>
-
-            <div class="file">
-                <button class="btn" id="contact"></button>
-                <p>Contact</p>
-            </div>
-
-            <div class="file">
-                <button class="btn" id="bin"></button>
-                <p>Bin</p>
-            </div>
+            <button class="btn file" id="">
+                <img src="assets/icons/recycle_bin.png" alt="">
+                <p class="p">Recycle Bin</p>
+            </button>
 
         </div>
 
-        <div class="noSelect">
+        <div class="noSelect" id="open-files">
 
-            <div id="aboutInside" class="aboutInside" onclick="putToFront(this)">
-                <div class="top">
-                    <div class="topBar">
-                        <button id="minimise">-</button>
-                        <button id="close">X</button>
-                        <div class="drag"></div>
-                    </div>
-                    <div class="editBar">
-                        <button>File</button>
-                        <button>Edit</button>
-                        <button>View</button>
-                    </div>
-                    <div class="pages">
-                        <button id="page1" class="page1">Design Ideas</button>
-                        <button id="page2" class="page2">About Me</button>
+            <div class="open-file" id="homepage">
+
+                <div class="topbar">
+                    <img src="assets/icons/explorer2.png" alt="">
+                    <p>https://tortoiseshelll.github.io/portfolio</p>
+                    <div class="drag"></div>
+                    <div class="btns">
+                        <button class="btn">_</button>
+                        <button class="btn">X</button>
                     </div>
                 </div>
 
+                <div class="menubar">
+                    <div class="top">
+                        <div class="dragbar"></div>
 
-                <div class="aboutContent">
-                    <div class="notes">
-                        <span id="inside">
-                            <h1 class="">Hi, I'm Wiktoria and welcome to my portfolio. </h1>
-                            <p class="content"><br>
-                                I am currently studying Computer Science with Cybersecurity at
-                                University of York, which is my last year. <br>
-                                I’m a self-taught developer currently focused on JavaScript and Python. Lately, I’ve
-                                been exploring Electron, which has opened up exciting possibilities for building
-                                powerful and creative desktop applications.
-                                <br>
-                                For me, coding is much more than just few lines of simple logic, as it opens a lot of
-                                opportunities to people like me, who love learning new challenging things.
-                                <br>
-                                I’m passionate about building things from
-                                scratch, experimenting with new technologies, and constantly expanding my skill set
-                                through new projects.
-                                <br>
+                        <button class="btn">File</button>
+                        <button class="btn">Edit</button>
+                        <button class="btn">View</button>
+                        <button class="btn">Go</button>
+                        <button class="btn">Favorites</button>
+                        <button class="btn">Tools</button>
+                        <button class="btn">Help</button>
+                    </div>
 
+                    <div class="mid">
+                        <div class="dragbar"></div>
+
+                        <button class="btn"><img src="assets/icons/left.png" alt="">Back</button>
+                        <button class="btn"><img src="assets/icons/right.png" alt="">Forward</button>
+                        <button class="btn"> <img src="assets/icons/msg_error-0.png" alt="">Stop</button>
+                        <button class="btn"><img src="assets/icons/refresh.png" alt="">Refresh</button>
+                        <button class="btn"><img src="assets/icons/homepage_alt.png" alt="">Home</button>
+                        <button class="btn">
+                            <img src="assets/icons/search_web-0.png" alt="">Search</button>
+                        <button class="btn"> <img src="assets/icons/directory_favorites-2.png" alt="">Favorites</button>
+                        <button class="btn"><img src="assets/icons/directory_closed_history-4.png"
+                                alt="">History</button>
+                        <button class="btn"><img src="assets/icons/printer-0.png" alt="">Print</button>
+                    </div>
+
+                    <div class="bot">
+                        <div class="dragbar"></div>
+
+                        <p>Address</p>
+
+                        <img id="textarea-explorer" src="assets/icons/explorer2.png" alt="">
+                        <textarea>https://tortoiseshelll.github.io/portfolio</textarea>
+
+                    </div>
+
+                </div>
+
+                <div class="main-page">
+                    <div class="content-box">
+                        <div class="text">
+                            <h1>Portfolio</h1>
+                            <h1>Works in progress</h1>
+                            <div class="links">
+                                <p class="link">Home</p>
+                                <p class="link">About</p>
+                            </div>
+                            <h2>Hi there, welcome to my portfolio!</h2>
+                            <p>
+                                My name is Wiktoria and this year I have completed a Msc Computer Science with
+                                Cybersecurity Degree at
+                                University of York. I’m a self-taught developer currently focused on JavaScript and
+                                Python. Lately, I’ve been exploring Electron, which has opened up exciting possibilities
+                                for building powerful and creative desktop applications.
                             </p>
-                        </span>
-                        <p id="cat" class="content">
-                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠂⠠⣦⢶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⠀⢀⣤⠤⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡧⠯⠁⠘⣽⡿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⢠⡟⠠⢶⣶⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⡛⣩⣵⡂⠀⢐⡒⡆⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⢸⡇⠀⠨⣵⣻⣧⣽⣳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⢸⡿⣞⡿⣋⡄⠀⠀⢭⣑⢻⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⠸⡇⠀⠀⠔⠫⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣸⣾⣧⣶⠟⡋⣀⡀⠀⢀⣀⣯⢎⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠠⢶⣶⣞⣻⢿⣾⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣈⣾⣫⣿⣽⣶⣯⣟⡶⠄⠀⠀⠲⠄⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⠀⢹⡆⠀⣴⣓⠚⠛⣿⣿⣿⣾⣿⣿⣷⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⡿⠟⠉⠁⠀⠀⠀⠂⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⠀⠀⢿⡀⠉⠉⠉⣳⣿⣶⣿⣿⣿⣿⣿⣿⣿⣷⡶⣴⣴⣶⡛⠛⠉⠉⠉⠉⠉⠀⢠⠛⠛⢿⣟⣯⣷⣾⣿⣿⣿⣿⣿⣿⣟⣛⣭⡴⠄⠀⠀⠀⠀⠈⠆⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⠀⠀⢸⡧⠀⠀⠈⢉⣉⣿⣿⣿⣿⣿⠿⣛⣿⡿⠀⠀⠀⠻⢿⣦⢀⣀⡀⠀⠀⣤⣇⣀⣼⡞⠈⠉⠉⠉⣀⠉⠛⠻⢿⣿⣿⣟⠓⣦⠔⠀⠀⠀⠀⠀⠨⡕⠅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⠀⠀⢸⣇⠀⣤⣬⣿⣿⠟⠛⠉⠁⠀⠘⣿⣿⠇⠀⠀⠑⠀⠘⠿⠟⠛⠙⠦⡞⠉⠛⠾⠃⠀⠀⠀⠀⠀⢿⣿⣧⠀⠀⠀⠈⠙⢷⣶⣼⡒⠓⠂⠀⢀⠀⠍⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣾⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠘⠿⠀⠀⣀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠾⡿⠉⠀⠀⠀⠀⠀⠀⠙⠿⣿⣶⡄⠀⢸⡇⡆⠀⠐⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⠀⠀⣼⠏⠉⢀⣰⣷⡿⠷⣾⣶⣶⣤⣀⠀⠀⠀⠀⠹⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠈⠀⠀⠀⠁⣀⣤⣶⣾⣽⣿⣷⣤⣄⠀⠉⠛⣧⣿⠽⡀⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⠀⢠⡾⠥⠤⠴⣾⡿⠃⢠⣾⣿⡟⠉⠉⣻⡗⢄⠀⠀⠀⠈⠣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠁⠀⠀⡴⡏⠎⢿⣿⠋⠐⢿⣿⣏⠈⢹⣦⠀⠀⠀⢹⡙⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⠀⠀⣰⢏⠀⠀⠀⠀⢿⣇⠀⢸⣿⣿⣧⣀⣰⣿⡇⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⡈⡇⠀⡀⢸⣦⣤⡀⣼⣿⢿⠀⠀⢀⠈⠁⠀⠣⣄⠘⣳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⢀⡼⠃⠀⠁⠄⡀⠀⠀⠛⠦⠌⠿⠿⢿⠿⠿⠋⣠⣾⣿⡀⢀⡤⠖⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⢸⣿⣄⡀⠈⠻⢿⢿⠿⡿⠁⣀⡸⠃⠀⠀⠀⣠⠀⠻⢮⢥⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠀⣼⠁⠀⠀⠀⠀⠀⠀⠃⠰⠠⢄⡀⠀⠀⠀⠀⠀⠀⠀⣨⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠿⣷⣜⠋⠉⠉⠉⠉⠓⠀⠐⠀⠈⠈⠄⠀⡄⠐⠈⠁⠁⠀⡁⠂⠁⠘⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⣠⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠐⠒⠠⢀⠠⢺⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣦⡀⠀⠄⠀⠤⠀⠀⠐⠀⠉⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⢀⢀⡑⠝⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⢠⡏⠀⣠⣤⣠⣀⡀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠀⠀⠀⠀⣀⣤⣤⣤⣦⣤⣤⣤⣤⣤⣤⣤⣤⣀⠀⠀⠀⠀⠙⠛⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠀⢰⣄⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⣿⠀⢈⣭⣿⠷⠚⠛⠙⢹⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⢿⣿⣿⣿⣿⣿⣽⣿⣻⣟⣿⣽⣻⣟⣿⡷⠀⠀⠀⠀⠀⠐⢡⢀⠀⠀⠀⠀⠀⢀⣶⣴⣦⣤⣤⣄⡀⠀⢀⣶⡧⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⢸⣧⠀⠀⠈⠁⠀⠀⠀⠀⢸⣿⡆⠀⠀⠶⠆⢾⠃⠀⠷⠀⠀⠀⠀⠀⠈⠉⠉⢿⣟⣿⣿⣽⣿⡾⣿⡅⠀⠀⠀⠀⠀⠀⠀⢠⡄⢠⢯⠐⣀⠀⢀⣀⡈⠉⠉⠙⠙⠛⠛⠳⢚⡾⣽⡋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⢿⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⢀⡀⢠⣶⠀⣴⡄⠀⠀⠀⠀⠀⠀⠀⠙⢯⣿⣾⣿⣏⡿⠃⠀⠀⠀⠀⠀⠀⠀⠠⣄⠠⣠⣀⡀⡈⠉⠉⠀⠀⠀⠀⠀⠀⢀⣤⡖⣿⠁⠴⣾⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠈⢧⠀⠀⠀⠀⠀⠀⠀⠀⠹⠃⠀⠀⠀⡀⠀⢀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠉⠐⠀⠀⠀⠀⢠⡴⠞⠋⠁⠀⠀⠀⣠⢂⣥⠡⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⠈⢷⣤⣤⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣧⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠀⠈⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠤⢈⡋⠉⠁⠀⠀⠚⠄⠌⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⢰⠏⠡⢺⡿⠏⠀⠀⡠⠀⠀⠀⠀⠀⠀⠐⠒⠠⠤⠄⠠⠤⠤⠤⠴⠒⠚⠉⠉⠉⠉⠉⠉⠓⠲⠤⢤⣀⣀⡀⣀⠤⠒⡖⠊⠩⠉⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠁⢴⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⣰⠏⠀⠀⠼⣅⠀⠀⢩⢶⣿⣿⣿⣶⠶⠚⠀⠀⠀⠀⠀⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⡄⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡑⠘⡮⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⢰⠏⠀⠀⢠⠎⠁⠀⠀⠀⠈⠉⠁⠉⠉⠟⠋⠽⢴⣂⣥⣀⣀⣀⣈⡉⢒⡶⠦⣀⣀⣀⣠⣀⣀⣀⣤⣴⣶⠿⠛⠁⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢬⣿⣡⣗⡅⠤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⡏⠀⠀⠀⠀⠀⢡⠔⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠁⠉⠉⠉⠀⠀⠀⠉⠉⠉⡍⠉⠉⢉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⣹⣿⣿⣖⣹⠨⣏⡐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⢷⠀⠀⠀⠀⢰⠃⠤⠊⢠⠴⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⢸⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠤⣄⣤⣄⣹⣿⠛⡓⠂⠀⠙⠀⢻⠬⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⣸⣿⣤⠄⠀⠀⠀⠀⣴⠈⠛⢻⢛⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠞⠀⠀⠀⠈⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⠀⠀⠀⠀⠀⠤⣄⣷⣬⣙⡛⠛⠉⠀⠀⠀⠀⣒⡰⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⢰⠃⢼⣿⡇⠀⠀⠀⠀⠈⠁⠀⠟⠉⢩⣭⢉⣠⢀⡤⠀⠀⠀⠀⠀⠀⠀⢀⣾⠇⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣔⢆⢸⡀⠀⢀⣰⣠⡿⠒⠂⠈⠀⠁⠀⠀⠀⢀⠈⢠⣳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⣼⡄⠀⠿⢟⡿⣶⡀⠀⠀⠀⠀⠀⠀⠸⠋⠡⣰⢿⣧⣞⣡⣾⣀⣄⣤⡾⠋⠈⠀⠀⠀⠀⠀⠀⠀⠀⢳⡈⢿⣆⣠⣀⢠⢀⡀⢠⣬⣏⣳⣬⠿⠛⠃⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⡰⣟⣿⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⣿⣿⡀⠀⠈⣼⠥⣿⣧⣶⣾⣀⡀⠀⠀⠀⠀⠁⠘⠁⠐⠛⠁⠘⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠀⠉⠉⠛⠿⠿⠟⢻⣿⠉⠛⠙⠒⠒⠀⠀⠀⠀⠀⠀⠀⠀⢈⣷⣾⣾⣧⣎⡯⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⣿⣿⡇⢰⣀⠀⢠⠿⣿⣿⣿⣼⣧⣾⢀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠐⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣝⠒⢶⣿⡿⢿⡏⠁⠼⠁⡋⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⢹⣿⣷⡼⣿⣄⠀⠀⠀⢨⠿⢻⣿⣿⣧⣾⣷⣏⣡⢀⣠⣷⣖⣴⣶⣶⣾⠤⢀⣤⣴⡾⠁⠀⠀⠘⣿⡷⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⢰⣶⣀⠰⣿⣷⣾⠏⠉⠀⠸⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠈⣿⣿⣿⢻⠿⠇⡀⠀⠀⠀⠘⠈⠁⠀⡽⠛⠟⠋⣵⣾⡿⠿⠛⡿⠋⠁⡰⢫⢯⢿⠁⠀⠀⠀⠀⠘⠳⣽⣿⣦⢀⣞⣤⡀⠹⣤⣦⠀⡀⢴⢠⠀⢳⣿⣭⣛⠻⠏⠉⠉⠀⠀⠀⡨⢸⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⢸⣿⣟⣾⣿⣷⣿⣧⡄⠀⠀⠀⠀⠀⠀⠀⠀⠒⠚⠉⠀⠀⠈⠀⠀⠊⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠻⣿⢿⡿⣿⡦⣼⣿⡳⣽⣽⣷⠷⢬⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⢀⡨⣠⠴⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⢸⣿⢩⣯⣼⣿⣿⡿⠻⡜⣦⣠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠃⠀⠀⠀⠈⠙⠋⠉⠉⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⢀⠐⣤⣼⣿⢩⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠘⡇⣾⣽⣿⣿⢟⣵⢿⡇⣻⡿⣇⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠲⣤⣀⠀⠀⠀⠀⠀⠀⠀⢠⣠⢤⡀⠀⠤⠀⠀⠐⠀⠐⡐⣤⣿⣂⣿⠿⣷⠿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⢿⣻⢿⣿⢯⣾⣿⣿⣷⣿⢗⡙⢃⣷⣾⠀⡆⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠇⠀⠑⠆⠀⠀⠀⠀⠲⠌⠉⠁⠁⠀⠀⢠⡀⢤⣐⣈⣿⣿⣿⣿⣿⣿⣿⠦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⢸⣳⢯⣿⣿⢏⣾⣿⣿⣿⣾⣼⡿⠁⡿⠏⢻⡸⣇⣶⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢤⣀⣀⣀⠀⣐⣶⣾⣹⣯⣷⣚⠿⣷⣿⣿⣿⣿⡟⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⠀⢸⠇⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⣁⣼⠟⣐⣬⡷⣠⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⢰⣤⣴⣶⣶⠾⣷⣦⣽⡿⢩⣌⠻⣿⣷⣯⣟⡿⣿⣿⣿⣿⣿⣿⠇⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⢀⡟⢀⣼⣿⣿⣿⣿⣿⣿⡿⣋⣴⠟⣡⣶⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠿⣿⣷⣹⣿⡷⣿⣦⣻⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⡿⡏⣯⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                            ⠀⢘⡇⠸⣿⢋⣿⠟⠋⢁⡿⢠⠛⠠⠌⠉⣿⡿⣿⣿⡿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣷⢿⣿⣿⣿⣿⡟⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢷⣧⣼⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                        </p>
 
-                    </div>
+                            <p>
+                                For me, coding is much more than just few lines of simple logic, as it opens a lot of
+                                opportunities to people like me, who love learning new challenging things. I’m
+                                passionate about building things from scratch, experimenting with new technologies, and
+                                constantly expanding my skill set through new projects.
+                            </p>
 
+                            <p>
+                                I am always open to any new opportunities that are coming my way.
+                            </p>
 
-                </div>
-            </div>
+                            <h2>Contact:</h2>
+                            <p class="contact">
+                                <b>e-mail:</b> <span>wiktoria.czuba02@gmail.com</span><br>
+                                <b>phone:</b> </span>+44 7543503352</span>
+                            </p>
 
+                            <form action="" onsubmit="event.preventDefault()">
+                                <h1>Works in progress - please note the contact form does not work yet...</h1>
 
+                                <label for="name">Name:</label> <br>
+                                <input type="text" name="name" id=""> <br>
+                                <label for="message">Contact message:</label> <br>
+                                <textarea name="message" id=""></textarea>
+                                <input class="btn" type="submit" name="submit" id="submit">
+                            </form>
 
-
-
-
-            <div id="projectsInside" class="aboutInside" onclick="putToFront(this)">
-                <div class="top">
-                    <div class="topBar">
-                        <button id="minimise2" class="minimise">-</button>
-                        <button id="close2" class="close">X</button>
-                        <div class="drag"></div>
-                    </div>
-                    <div class="editBar">
-                        <div id="btns"><button>&#8592;</button>
-                            <button>&#8594;</button>
-                        </div>
-                        <button id="searchBar">Desktop > Projects </button>
-                        <input id="search" placeholder="Search"></input>
-                    </div>
-                    <div class="pages">
-                        <button class="page1">Downloads</button>
-                        <button class="page2">Projects</button>
-                    </div>
-                </div>
-                <div id="projectsContent" class="aboutContent">
-                    <div class="leftBar"></div>
-                    <div class="projectsFiles">
-
-                        <div class="project1">
-                            <button id="project1Btn" class="btn"></button>
-                            <p>Planner App </p>
                         </div>
 
-                    </div>
-                </div>
-            </div>
+                        <img src="assets/icons/cat.gif" alt="">
 
-
-            <div id="plannerApp" class="plannerApp" onclick="putToFront(this)">
-                <div class="top">
-                    <div class="topBar">
-                        <p><img src="images/icon.ico" alt="Planner">Planner App</p>
-
-                        <button id="minimise3" class="minimise">-</button>
-                        <button id="close3" class="close">X</button>
-
-                        <div class="drag"></div>
-                    </div>
-                    <div class="editBar">
-                        <button>File</button>
-                        <button>Edit</button>
-                        <button>View</button>
-                    </div>
-                </div>
-
-                <div class="insideProject">
-                    <div class="notesProject">
-                        <h1>Planner App 1.0</h1>
-
-                        <p>Semi-transparent todo & notes app for windows made with Electron. It always stays on top,
-                            which
-                            makes taking notes
-                            much easier without the need to switch back between the apps.
-                            The semi-transparent background and small UI makes the app a lot more convenient
-                            to use as it won't get in the way and block the view behind it.
-                            It also has 7 different backgrounds.</p>
-
-                        <p>First page <b><em>"To Do"</em></b> is simply a Todo task list,
-                            where user can add or delete tasks.
-                            When clicking on the task, it moves into another page,
-                            <b><em>"Done"</em></b>:
-                        </p>
-                        <div class="gifs"><img id="gif1" src="images/project1/1.gif" alt="todo page"></div>
-
-                        <p>Second page <b><em>"Done"</em></b> is a finished tasks list. There can be found crossed out
-                            tasks from <b><em>"To Do"</em></b> page:</p>
-                        <div class="gifs"><img id="gif1" src="images/project1/2.gif" alt="todo page"></div>
-
-                        <p>Last page <b><em>"Notes"</em></b> lets the user take quick notes.
-                            Due to the app being always on top it helps the user with visibility
-                            the other apps while taking notes:
-                        </p>
-                        <div class="gifs"><img id="gif1" src="images/project1/3.gif" alt="todo page"></div>
+                        <p class="thankyou">Thank you for your time</p>
 
                     </div>
-                </div>
 
-            </div>
-
-
-
-
-            <div id="contactInside" class="contactInside" onclick="putToFront(this)">
-                <div class="top">
-                    <div class="topBar">
-                        <p><img id="skypeIcon" src="images/skype.png" alt="Contact"> Contact</p>
-
-                        <button id="minimise4" class="minimise">-</button>
-                        <button id="close4" class="close">X</button>
-
-                        <div class="drag"></div>
-                    </div>
-                </div>
-
-                <div id="insideContact" class="aboutContent">
-                    <div class="leftSide">
-                        <div class="names">
-                            <p id="name">Wiktoria Czuba</p>
-                            <p>Alexander Sasha Novikov</p>
-                            <p>Zyanya Mondragón</p>
-                            <p>Sabine Callas</p>
-                            <p>Liam Byrne</p>
-                            <p>Ling Ying Wei</p>
-                            <p>Sunwoo Han</p>
-                            <p>Jamie Adeyemi</p>
+                    <div class="footer">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box">
+                            <img src="assets/icons/internet.png" alt="">
+                            <p>Internet</p>
                         </div>
                     </div>
 
-                    <div class="rightSide">
-                        <div><img src="images/pfp.png" alt="profile picture" id="pfp"></div>
-                        <p id="name">Wiktoria Czuba</p>
-                        <p class="contactDetails">Self-taught programmer ready to meet new challenges :)</p>
-                        <p class="contactDetails">E-mail: <span class="details"> wiktoria.czuba02@gmail.com</span></p>
-                        <p class="contactDetails">Phone: <span>+44 07543503352</span> </p>
+                </div>
+
+                <div class="open-file" id="documents-page">
+                    <div class="topbar">
+                        <img src="assets/icons/documents_open.png" alt="">
+                        <p>Documents</p>
+                        <div class="drag"></div>
+                        <div class="btns">
+                            <button class="btn">_</button>
+                            <button class="btn">X</button>
+                        </div>
                     </div>
+
+                    <div class="menubar">
+                        <div class="top">
+                            <div class="dragbar"></div>
+
+                            <button class="btn">File</button>
+                            <button class="btn">Edit</button>
+                            <button class="btn">View</button>
+                            <button class="btn">Go</button>
+                            <button class="btn">Favorites</button>
+                            <button class="btn">Tools</button>
+                            <button class="btn">Help</button>
+                        </div>
+
+                        <div class="mid"></div>
+
+                        <div class="bot">
+                            <textarea name="" id=""></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="main-page">
+                        <p>hi</p>
+                    </div>
+
                 </div>
 
             </div>
 
+            <div id="taskbar">
+                <div class="taskbtns">
+                    <button class="btn" id="start">
+                        <img src="assets/icons/start.png" alt="">
+                        <p>Start</p>
+                    </button>
 
+                    <button class="btn" id="explorer">
+                        <img src="assets/icons/internet_explorer.png" alt="">
+                        <p>https://tortoiseshe...</p>
+                    </button>
 
+                    <button class="btn" id="documents">
+                        <img src="assets/icons/my_documents.png" alt="">
+                        <p>Documents</p>
+                    </button>
 
+                    <button class="btn" id="mycomputer">
+                        <img src="assets/icons/my_computer.png" alt="">
+                        <p>My Computer</p>
+                    </button>
 
-            <div class="menuBar">
+                    <button class="btn" id="notepad">
+                        <img src="assets/icons/notepad.png" alt="">
+                        <p>Notepad</p>
+                    </button>
 
-                <div class="left">
-                    <button id="windows" class="menuBtn"></button>
-                    <button id="explorer" class="menuBtn"></button>
+                    <button class="btn" id="netmeeting">
+                        <img src="assets/icons/netmeeting.png" alt="">
+                        <p>Contact</p>
+                    </button>
 
-
-                    <button id="menuAbout" class="menuBtn"></button>
-                    <button id="menuProjects" class="menuBtn"></button>
-                    <button id="menuProject1" class="menuBtn"></button>
-                    <button id="menuContact" class="menuBtn"></button>
                 </div>
 
-                <button id="timeBtn" class="menuBtn">
+                <div id="timebox">
+                    <img src="assets/icons/two_windows.png" alt="">
+                    <img src="assets/icons/speaker.png" alt="">
                     <p id="time"></p>
-                    <p id="date"></p>
-                </button>
+                </div>
+
             </div>
-        </div>
-
-
+            <div id="selection"></div>
     </section>
-
-
-
-
-
-
-
-
-    <div id="container">
-        <div class="item" style="top: 50px; left: 50px;"></div>
-        <div class="item" style="top: 150px; left: 150px;"></div>
-        <div class="item" style="top: 250px; left: 100px;"></div>
-    </div>
-    <div id="selection"></div>
-
-
-
-
-    </div>
 
     <script src="script.js"></script>
 </body>

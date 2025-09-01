@@ -1,224 +1,59 @@
-const logIn = document.getElementById('logInScreen');
-
-const aboutBtn = document.getElementById('aboutMe');
-const aboutInside = document.getElementById('aboutInside');
-const closeBtn = document.getElementById('close');
-const minimise = document.getElementById('minimise');
-const closeBtn2 = document.getElementById('close2');
-const closeBtn3 = document.getElementById('close3');
-const closeBtn4 = document.getElementById('close4');
-const minimise2 = document.getElementById('minimise2');
-const minimise3 = document.getElementById('minimise3');
-const minimise4 = document.getElementById('minimise4');
-const dragInside = document.querySelectorAll('.aboutInside');
-
-const files = document.querySelectorAll('.file');
-
-const projectsBtn = document.getElementById('projects');
-const projectsInside = document.getElementById('projectsInside');
-
-const contact = document.getElementById('contact');
-const contactInside = document.getElementById('contactInside');
-const menuContact = document.getElementById('menuContact');
-
-const menuProject1 = document.getElementById('menuProject1');
-
-const page1 = document.getElementById('page1');
-const page2 = document.getElementById('page2');
-const cat = document.getElementById('cat');
-const inside = document.getElementById('inside');
-
 const btns = document.querySelectorAll('.btn');
-const menuBtn = document.querySelectorAll('.menuBtn');
-const winBtn = document.getElementById('windows');
-const menuAbout = document.getElementById('menuAbout');
-const menuProjects = document.getElementById('menuProjects');
-
-const project1Btn = document.getElementById('project1Btn');
-const plannerApp = document.getElementById('plannerApp');
-
+const startBtn = document.getElementById('start');
 const selection = document.getElementById('selection');
-const section = document.getElementById('section');
+const desktop = document.getElementById('desktop-screen');
+const files = document.querySelectorAll('.file');
+const ps = document.querySelectorAll('.p');
+const topbar = document.getElementById('topbar');
+const openFile = document.querySelectorAll('.open-file');
+
 
 let time = document.getElementById('time');
-
 let ZCount = 1;
+
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
     let startX, startY;
 
-    let sound = new Audio('/audio/click.wav');
-    let startup = new Audio('/audio/startup.mp3');
-    let skype = new Audio('/audio/skype.wav');
-
-    logIn.addEventListener('click', () => {
-        logIn.style.display = 'none';
-    })
-
+    let sound = new Audio('assets/audio/click.wav');
+    let startup = new Audio('assets/audio/startup.mp3');
 
     setInterval(() => {
         let d = new Date();
         time.innerHTML = d.toLocaleTimeString();
     }, 1000);
 
-    setInterval(() => {
-        let d = new Date();
-        date.innerHTML = d.toLocaleDateString();
-    }, 1000);
-
-    closeBtn.addEventListener('click', () => {
-        aboutInside.style.display = 'none';
-        menuAbout.style.display = 'none';
-    });
-
-    closeBtn2.addEventListener('click', () => {
-        projectsInside.style.display = 'none';
-        menuProjects.style.display = 'none';
-    });
-
-    closeBtn3.addEventListener('click', () => {
-        plannerApp.style.display = 'none';
-        menuProject1.style.display = 'none';
-    });
-
-    closeBtn4.addEventListener('click', () => {
-        contactInside.style.display = 'none';
-        menuContact.style.display = 'none';
-    });
 
 
-    minimise.addEventListener('click', () => {
-        aboutInside.style.display = 'none';
-        menuAbout.style.display = 'inline-block';
-    });
-
-    minimise2.addEventListener('click', () => {
-        projectsInside.style.display = 'none';
-        menuProjects.style.display = 'inline-block';
-    });
-
-    minimise3.addEventListener('click', () => {
-        plannerApp.style.display = 'none';
-        menuProject1.style.display = 'inline-block';
-    });
-
-    minimise4.addEventListener('click', () => {
-        contactInside.style.display = 'none';
-        menuContact.style.display = 'inline-block';
-    });
-
-
-
-    aboutBtn.addEventListener('dblclick', () => {
-        aboutInside.style.display = 'block';
-        menuAbout.style.display = 'inline-block';
-        putToFront(aboutInside);
-    });
-
-    contact.addEventListener('dblclick', () => {
-        skype.volume = 0.4;
-        skype.play();
-
-        contactInside.style.display = 'block';
-        menuContact.style.display = 'inline-block';
-        putToFront(contactInside);
-    });
-
-
-    files.forEach(f => {
-        f.addEventListener('click', () => {
-            files.forEach(file => file.classList.remove('selected'));
-            f.classList.add('selected');
-        });
-    })
-
-
-    projectsBtn.addEventListener('dblclick', () => {
-        projectsInside.style.display = 'block';
-        menuProjects.style.display = 'inline-block';
-        putToFront(projectsInside);
-    });
-
-
-    btns.forEach(btn => {
-        btn.addEventListener('click', () => {
+    btns.forEach(b => {
+        b.addEventListener('click', () => {
+            btns.forEach(btn => btn.classList.remove('selected'));
+            b.classList.add('selected');
             sound.play();
         });
     })
 
-    menuBtn.forEach(btn => {
-        btn.addEventListener('click', () => {
-            sound.play();
+    files.forEach(file => {
+        file.addEventListener('click', () => {
+            ps.forEach(p => p.classList.remove('selected'));
+
+            const p = file.querySelector('.p');
+            if (p) {
+                p.classList.add('selected');
+            }
         });
     })
 
-    winBtn.addEventListener('click', () => {
+    startBtn.addEventListener('click', () => {
         startup.volume = 0.3;
         startup.play();
-    });
-
-    menuAbout.addEventListener('click', () => {
-        if (aboutInside.style.display === 'block') {
-            aboutInside.style.display = 'none';
-        } else {
-            aboutInside.style.display = 'block';
-            putToFront(aboutInside);
-        }
-    });
-
-    menuProjects.addEventListener('click', () => {
-        if (projectsInside.style.display === 'block') {
-            projectsInside.style.display = 'none';
-        } else {
-            projectsInside.style.display = 'block';
-            putToFront(projectsInside);
-        }
-    });
-
-    menuContact.addEventListener('click', () => {
-        if (contactInside.style.display === 'block') {
-            contactInside.style.display = 'none';
-        } else {
-            contactInside.style.display = 'block';
-            putToFront(contactInside);
-        }
     })
 
-    menuProject1.addEventListener('click', () => {
-        if (plannerApp.style.display === 'block') {
-            plannerApp.style.display = 'none';
-        } else {
-            plannerApp.style.display = 'block';
-            putToFront(plannerApp);
-        }
-    });
 
-    project1Btn.addEventListener('dblclick', () => {
-        plannerApp.style.display = 'block';
-        menuProject1.style.display = 'inline-block';
-        putToFront(plannerApp);
-    });
-
-    page1.addEventListener('click', () => {
-        page1.classList.add('active');
-        page2.classList.add('noActive');
-
-        cat.style.display = 'block';
-        inside.style.display = 'none';
-    });
-
-    page2.addEventListener('click', () => {
-        page1.classList.remove('active');
-        page2.classList.add('active');
-        page2.classList.remove('noActive');
-
-        cat.style.display = 'none';
-        inside.style.display = 'block';
-    });
-
-
-    section.addEventListener('mousedown', (e) => {
+    desktop.addEventListener('mousedown', (e) => {
         if (e.target.closest('.noSelect')) return;
 
         startX = e.clientX;
@@ -242,7 +77,17 @@ document.addEventListener('DOMContentLoaded', function () {
             selection.style.height = `${h}px`;
 
             const boxRect = selection.getBoundingClientRect();
-            files.forEach(item => {
+            btns.forEach(item => {
+                const fileRect = item.getBoundingClientRect();
+                const isSelected =
+                    fileRect.left < boxRect.right &&
+                    fileRect.right > boxRect.left &&
+                    fileRect.top < boxRect.bottom &&
+                    fileRect.bottom > boxRect.top;
+                item.classList.toggle('selected', isSelected);
+            });
+
+            ps.forEach(item => {
                 const fileRect = item.getBoundingClientRect();
                 const isSelected =
                     fileRect.left < boxRect.right &&
@@ -255,66 +100,67 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const onMouseUp = () => {
             selection.style.display = 'none';
-            section.removeEventListener('mousemove', onMouseMove);
-            section.removeEventListener('mouseup', onMouseUp);
+            desktop.removeEventListener('mousemove', onMouseMove);
+            desktop.removeEventListener('mouseup', onMouseUp);
         };
 
-        section.addEventListener('mousemove', onMouseMove);
-        section.addEventListener('mouseup', onMouseUp);
+        desktop.addEventListener('mousemove', onMouseMove);
+        desktop.addEventListener('mouseup', onMouseUp);
     });
 
-
-
-
-
-
-
-    if (aboutInside) dragElement(aboutInside);
-    if (projectsInside) dragElement(projectsInside);
-    if (plannerApp) dragElement(plannerApp);
-    if (contactInside) dragElement(contactInside);
+    openFile.forEach(win => dragElement(win));
 });
 
 
-function putToFront(e) {
-    e.style.zIndex = ++ZCount;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function putToFront(el) {
+    el.style.zIndex = ++ZCount;
 }
 
-
-function dragElement(elmnt) {
+function dragElement(el) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 
-    const drag = elmnt.querySelector('.drag');
-    if (drag) {
-        drag.onmousedown = dragMouseDown;
-    } else {
-        elmnt.onmousedown = dragMouseDown;
-    }
+    const dragHandle = el.querySelector('.drag') || el;
 
-    function dragMouseDown(e) {
-        e = e || window.event;
-        e.preventDefault();
+    dragHandle.onmousedown = dragMouseDown;
 
-        putToFront(elmnt);
+    function dragMouseDown(ev) {
+        ev.preventDefault();
 
-        pos3 = e.clientX;
-        pos4 = e.clientY;
+        putToFront(el);
+
+        pos3 = ev.clientX;
+        pos4 = ev.clientY;
 
         document.onmouseup = closeDragElement;
         document.onmousemove = elementDrag;
     }
 
-    function elementDrag(e) {
-        e = e || window.event;
-        e.preventDefault();
+    function elementDrag(ev) {
+        ev.preventDefault();
 
-        pos1 = pos3 - e.clientX;
-        pos2 = pos4 - e.clientY;
-        pos3 = e.clientX;
-        pos4 = e.clientY;
+        pos1 = pos3 - ev.clientX;
+        pos2 = pos4 - ev.clientY;
+        pos3 = ev.clientX;
+        pos4 = ev.clientY;
 
-        elmnt.style.top = (elmnt.offsetTop - pos2) + 'px';
-        elmnt.style.left = (elmnt.offsetLeft - pos1) + 'px';
+        el.style.top = (el.offsetTop - pos2) + 'px';
+        el.style.left = (el.offsetLeft - pos1) + 'px';
     }
 
     function closeDragElement() {
