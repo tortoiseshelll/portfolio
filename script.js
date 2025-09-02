@@ -1,17 +1,32 @@
 const btns = document.querySelectorAll('.btn');
+const tasks = document.querySelectorAll('.task');
 const startBtn = document.getElementById('start');
 const selection = document.getElementById('selection');
 const desktop = document.getElementById('desktop-screen');
 const files = document.querySelectorAll('.file');
 const ps = document.querySelectorAll('.p');
+const openFiles = document.querySelectorAll('.open-file');
+const back = document.querySelector('.back');
+const minimise = document.querySelectorAll('.minimise');
+const close = document.querySelectorAll('.close');
+const taskbtns = document.querySelectorAll('.task');
+const documentsPage = document.getElementById('documents-page');
+const forward = document.querySelector('.forward');
 const topbar = document.getElementById('topbar');
-const openFile = document.querySelectorAll('.open-file');
+const documentTask = document.getElementById('documents-task');
+const documentsFile = document.getElementById('documents-file');
+const documentfiles = document.getElementById('document-files');
+const explorer = document.getElementById('explorer');
+
+const p1folder = document.getElementById('project1folder');
+const p2folder = document.getElementById('project2folder');
+const projects = document.querySelectorAll('.project');
+const project1page = document.getElementById('project1page');
+const project2page = document.getElementById('project2page');
 
 
 let time = document.getElementById('time');
 let ZCount = 1;
-
-
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -26,31 +41,127 @@ document.addEventListener('DOMContentLoaded', function () {
         time.innerHTML = d.toLocaleTimeString();
     }, 1000);
 
+    startBtn.addEventListener('click', () => {
+        startup.volume = 0.3;
+        startup.play();
+    });
 
+    explorer.classList.add('default');
+
+    tasks.forEach(t => {
+        t.addEventListener('click', () => {
+            explorer.classList.remove('default');
+            tasks.forEach(task => task.classList.remove('selected'));
+            t.classList.add('selected');
+            sound.play();
+        });
+    })
 
     btns.forEach(b => {
         b.addEventListener('click', () => {
-            btns.forEach(btn => btn.classList.remove('selected'));
-            b.classList.add('selected');
             sound.play();
         });
     })
 
     files.forEach(file => {
         file.addEventListener('click', () => {
+
             ps.forEach(p => p.classList.remove('selected'));
 
             const p = file.querySelector('.p');
             if (p) {
                 p.classList.add('selected');
             }
-        });
-    })
 
-    startBtn.addEventListener('click', () => {
-        startup.volume = 0.3;
-        startup.play();
-    })
+            files.forEach(f => f.classList.remove('selected'));
+            file.classList.add('selected');
+
+            sound.play();
+        });
+
+        file.addEventListener('dblclick', () => {
+            const id = file.dataset.id;
+
+            const openFile = document.querySelector(`.open-file[data-id="${id}"]`);
+            if (openFile) {
+                openFile.style.display = 'block';
+            }
+
+            const taskBtn = document.querySelector(`.task[data-id="${id}"]`);
+            if (taskBtn) {
+                taskBtn.style.display = 'flex';
+            }
+        });
+    });
+
+    taskbtns.forEach(taskbtn => {
+        taskbtn.addEventListener('click', () => {
+
+            const id = taskbtn.dataset.id;
+            const openFile = document.querySelector(`.open-file[data-id="${id}"]`);
+            if (openFile) {
+                openFile.style.display = 'block';
+                putToFront(openFile);
+            }
+        });
+    });
+
+
+
+    minimise.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const openFile = btn.closest('.open-file');
+
+            if (openFile) {
+                openFile.style.display = 'none';
+            }
+        });
+    });
+
+    close.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const openFile = btn.closest('.open-file');
+
+            if (openFile) {
+                openFile.style.display = 'none';
+
+                const id = openFile.dataset.id;
+                const taskBtn = document.querySelector(`.task[data-id="${id}"]`);
+                if (taskBtn) {
+                    documentfiles.style.display = 'flex';
+                    project1page.style.display = 'none';
+
+                    taskBtn.style.display = 'none';
+                }
+            };
+        });
+    });
+
+
+    back.addEventListener('click', () => {
+        documentfiles.style.display = 'flex';
+
+        projects.forEach(project => {
+            project.style.display = 'none';
+        })
+    });
+
+    forward.addEventListener('click', () => {
+        documentfiles.style.display = 'none';
+
+
+    });
+
+
+    p1folder.addEventListener('dblclick', () => {
+        documentfiles.style.display = 'none';
+        project1page.style.display = 'block';
+    });
+
+    p2folder.addEventListener('dblclick', () => {
+        documentfiles.style.display = 'none';
+        project2page.style.display = 'block';
+    });
 
 
     desktop.addEventListener('mousedown', (e) => {
@@ -77,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function () {
             selection.style.height = `${h}px`;
 
             const boxRect = selection.getBoundingClientRect();
-            btns.forEach(item => {
+            files.forEach(item => {
                 const fileRect = item.getBoundingClientRect();
                 const isSelected =
                     fileRect.left < boxRect.right &&
@@ -108,21 +219,8 @@ document.addEventListener('DOMContentLoaded', function () {
         desktop.addEventListener('mouseup', onMouseUp);
     });
 
-    openFile.forEach(win => dragElement(win));
+    openFiles.forEach(win => dragElement(win));
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
