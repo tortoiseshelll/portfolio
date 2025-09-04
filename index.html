@@ -6,7 +6,7 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -115,7 +115,6 @@
                     <div class="content-box">
                         <div class="text">
                             <h1>Portfolio</h1>
-                            <h1>Works in progress</h1>
                             <div class="links">
                                 <p class="link">Home</p>
                                 <p class="link">About</p>
@@ -144,22 +143,6 @@
                             <p>
                                 I am always open to any new opportunities that are coming my way.
                             </p>
-
-                            <h2>Contact:</h2>
-                            <p class="contact">
-                                <b>e-mail:</b> <span>wiktoria.czuba02@gmail.com</span><br>
-                                <b>phone:</b> <span>+44 7543503352</span>
-                            </p>
-
-                            <form action="" onsubmit="event.preventDefault()">
-                                <h1>Works in progress - please note the contact form does not work yet...</h1>
-
-                                <label for="name">Name:</label> <br>
-                                <input type="text" name="name" id=""> <br>
-                                <label for="message">Contact message:</label> <br>
-                                <textarea name="message" id=""></textarea>
-                                <input class="btn" type="submit" name="submit" id="submit">
-                            </form>
 
                         </div>
 
@@ -268,7 +251,7 @@
 
                             <div class="project" id="project1page">
 
-                                <button class="btn" id="todoapp">
+                                <button class="btn" id="todoapp-btn">
                                     <img src="assets/icons/notepad_file-2.png" alt="">
                                     <p>Todo App.txt</p>
                                 </button>
@@ -277,15 +260,11 @@
 
                             <div class="project" id="project2page">
 
-                                <button class="btn" id="portfolio1">
+                                <button class="btn" id="portfolio1btn">
                                     <img src="assets/icons/notepad_file-2.png" alt="">
                                     <p>Portfolio 1.txt</p>
                                 </button>
 
-                                <button class="btn" id="portfolio2">
-                                    <img src="assets/icons/notepad_file-2.png" alt="">
-                                    <p>Portfolio 2.txt</p>
-                                </button>
 
                             </div>
 
@@ -296,7 +275,7 @@
                 </div>
 
                 <div class="footer">
-                    <div class="box">
+                    <div class="box" id="object-count">
                         <p>3 Object(s)</p>
                     </div>
                     <div class="box"></div>
@@ -307,6 +286,143 @@
                 </div>
 
             </div>
+
+            <div class="open-file notes" id="todoapp">
+                <div class="topbar">
+
+                    <img src="assets/icons/notepad.png" alt="">
+                    <p>Todo App.txt</p>
+
+                    <div class="drag"></div>
+
+                    <div class="btns">
+                        <button class="btn minimise">_</button>
+                        <button class="btn close">X</button>
+                    </div>
+
+                </div>
+
+                <div class="menubar">
+                    <div class="top">
+                        <button class="btn">File</button>
+                        <button class="btn">Edit</button>
+                        <button class="btn">Search</button>
+                        <button class="btn">Help</button>
+                    </div>
+
+                </div>
+                <div class="main-page">
+                    <div class="content-box" id="todo-page">
+                        <h1 class="text">Planner App 1.0</h1>
+                        <h2 class="text">(a fun project)</h2>
+
+                        <p class="text">Semi-transparent todo & notes app for windows made with Electron. It always
+                            stays on top,
+                            which
+                            makes taking notes
+                            much easier without the need to switch back between the apps.
+                            The semi-transparent background and small UI makes the app a lot more convenient
+                            to use as it won't get in the way and block the view behind it.
+                            It also has 7 different backgrounds.</p>
+
+                        <p class="text">First page <b><em>"To Do"</em></b> is simply a Todo task list,
+                            where user can add or delete tasks.
+                            When clicking on the task, it moves into another page,
+                            <b><em>"Done"</em></b>:
+                        </p>
+                        <img id="gif1" src="assets/project1/1.gif" alt="todo page">
+
+                        <p class="text">Second page <b><em>"Done"</em></b> is a finished tasks list. There can
+                            be found crossed out tasks from <b><em>"To Do"</em></b> page:
+                        </p>
+                        <img id="gif1" src="assets/project1/2.gif" alt="todo page">
+
+                        <p class="text">Last page <b><em>"Notes"</em></b> lets the user take quick notes.
+                            Due to the app being always on top it helps the user with visibility
+                            the other apps while taking notes:
+                        </p>
+                        <img id="gif1" src="assets/project1/3.gif" alt="todo page">
+                    </div>
+
+                    <div class="content-box" id="portfolio1-page">
+                        <h1 class="text">Portfolio 1</h1>
+                        <h2 class="text">(current)</h2>
+
+                        <p class="text">This professional portfolio was inspired by windows 98. It is an
+                            interactive website to look
+                            like a real desktop. The applications can be moved across the desktop, like in a real one.
+                            Additionally, the files need to be double clicked in order to open. Another interesting
+                            feature is whenever clicking on a button, an iconic sound plays, just like in a real windows
+                            98.</p>
+                        <img src="assets/project2/portfolio2/1.png" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="open-file notes" id="contact-page">
+                <div class="topbar">
+
+                    <img src="assets/icons/netmeeting.png" alt="">
+                    <p>Contact</p>
+
+                    <div class="drag"></div>
+
+                    <div class="btns">
+                        <button class="btn minimise">_</button>
+                        <button class="btn close">X</button>
+                    </div>
+
+                </div>
+
+                <div class="menubar">
+                    <div class="top">
+                        <button class="btn">Call</button>
+                        <button class="btn">View</button>
+                        <button class="btn">Tools</button>
+                        <button class="btn">Help</button>
+                    </div>
+
+                </div>
+                <div class="main-page">
+
+                    <div class="content-box">
+                        <p class="contact">
+                            <b>e-mail:</b> <span>wiktoria.czuba02@gmail.com</span><br>
+                            <b>phone:</b> <span>+44 7543503352</span>
+                        </p>
+
+                        <form id="contact-form">
+
+                            <input type="text" name="name" placeholder="Name" required> <br>
+                            <input type="email" name="from" placeholder="Email" required>
+
+                            <textarea name="message" placeholder="Contact Message" required></textarea>
+                            <input class="btn" type="submit" name="submit" id="submit">
+                        </form>
+
+                        <p class="contact" id="status"></p>
+
+                    </div>
+
+                    <div class="footer">
+                        <div class="box">
+                            <p>Not in call</p>
+                        </div>
+                        <div class="box">
+                            <img src="assets/icons/my_computer.png" alt="">
+                            <img src="assets/icons/258-2580697_clippy-png-png-download-clippy-windows-transparent-png.png"
+                                alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
 
         </div>
 

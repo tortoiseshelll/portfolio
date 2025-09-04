@@ -398,59 +398,6 @@ section {
             line-height: 1.5;
         }
 
-        .contact {
-
-            span {
-                user-select: text;
-            }
-
-            button {
-                user-select: none !important;
-                margin-left: 20px;
-            }
-        }
-
-        form {
-            margin-top: 30px;
-
-            input {
-                margin-top: 10px;
-                outline: none;
-                justify-content: start;
-                height: 25px;
-                width: 300px;
-                padding: 5px;
-                border: 1px solid #686868;
-                display: flex;
-            }
-
-            textarea {
-                margin-top: 15px;
-                height: 200px;
-                width: 500px;
-                padding: 20px;
-            }
-
-            input:nth-of-type(2) {
-                width: 100px !important;
-            }
-
-            .btn {
-                border-top: 2px solid #ffffff;
-                border-left: 2px solid #ffffff;
-                border-right: 2px solid #686868;
-                border-bottom: 2px solid #686868;
-            }
-
-            .btn:active {
-                border-top: 2px solid #686868;
-                border-left: 2px solid #686868;
-                border-right: 2px solid #ffffff;
-                border-bottom: 2px solid #ffffff;
-            }
-
-        }
-
         img {
             display: flex;
             background-image: url(assets/icons/cat.gif);
@@ -471,14 +418,14 @@ section {
 #documents-page {
     position: absolute;
     display: block;
-    top: 350px;
+    top: 500px;
     left: 80px;
     width: 600px;
-    height: 500px;
+    height: 400px;
 
     .content-box {
         display: flex;
-        height: 340px;
+        height: 240px;
     }
 
     .left {
@@ -536,6 +483,202 @@ section {
     }
 
 
+}
+
+
+#contact-page {
+    position: absolute;
+    display: block;
+    left: 300px;
+    top: 30px;
+    width: 350px;
+    height: 437px;
+    z-index: 1;
+
+    .menubar {
+        border-bottom: 1px solid #747474;
+    }
+
+    .contact {
+        margin-top: 10px;
+
+        span {
+            user-select: text;
+        }
+
+        button {
+            user-select: none !important;
+            margin-left: 20px;
+        }
+
+        * {
+            font-family: serif;
+        }
+    }
+
+    .main-page {
+        border-top: 1px solid white !important;
+        position: relative;
+        top: -2px;
+    }
+
+    .content-box {
+        background-color: transparent;
+        margin-left: 20px;
+        border: none;
+        padding: 10px;
+        height: 340px;
+        overflow: hidden;
+    }
+
+    #status {
+        position: relative;
+        left: 130px;
+        top: -35px;
+    }
+
+    form {
+
+        * {
+            font-family: serif;
+            font-size: 14px;
+        }
+
+        input {
+            outline: none;
+            justify-content: start;
+            height: 25px;
+            width: 300px;
+            padding: 5px;
+            border: 1px solid #686868;
+            display: flex;
+        }
+
+        textarea {
+            margin-top: 15px;
+            height: 160px;
+            width: 320px;
+            padding: 20px;
+        }
+
+        input:nth-of-type(1) {
+            width: 200px !important;
+        }
+
+        input:nth-of-type(2) {
+            margin-top: -10px;
+        }
+
+        input:nth-of-type(3) {
+            margin-top: 20px;
+            width: 100px !important;
+        }
+
+        .btn {
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #686868;
+            border-bottom: 2px solid #686868;
+        }
+
+        .btn:active {
+            border-top: 2px solid #686868;
+            border-left: 2px solid #686868;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+        }
+
+    }
+
+    .footer {
+        position: relative;
+        left: -3px;
+
+        .box:nth-of-type(1) {
+            width: 80%;
+        }
+
+        .box:nth-of-type(2) {
+            width: 20%;
+        }
+    }
+}
+
+.notes {
+
+    .menubar {
+        height: 20px;
+        border: none;
+
+        .top {
+            height: 20px;
+            border: none;
+        }
+    }
+
+    .content-box {
+        height: 440px;
+        width: 97%;
+
+        .text {
+            margin: 30px;
+
+            * {
+                font-family: serif;
+            }
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            position: relative;
+            top: -20px;
+            font-size: 17px;
+            color: #999999;
+        }
+
+        p {
+            position: relative;
+            top: -10px;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: serif;
+        }
+
+    }
+}
+
+#todoapp {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 550px;
+    height: 500px;
+    display: none;
+    z-index: 2;
+}
+
+
+#todo-page {
+    display: none;
+
+    img {
+        position: relative;
+        width: 400px;
+        margin-left: 60px;
+        top: -20px;
+        margin-bottom: 20px;
+    }
+}
+
+#portfolio1-page {
+    img {
+        width: 500px;
+        display: flex;
+        justify-self: center;
+    }
 }
 
 

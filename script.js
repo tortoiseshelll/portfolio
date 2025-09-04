@@ -23,11 +23,19 @@ const p2folder = document.getElementById('project2folder');
 const projects = document.querySelectorAll('.project');
 const project1page = document.getElementById('project1page');
 const project2page = document.getElementById('project2page');
+const todoapp = document.getElementById('todoapp');
+const todopage = document.getElementById('todo-page');
+const portfolio1btn = document.getElementById('portfolio1btn');
+const portfolio1Page = document.getElementById('portfolio1-page');
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("status");
 
 
 let time = document.getElementById('time');
 let ZCount = 1;
 
+emailjs.init("k0aQ_On8QwR3ieYZf");
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -40,6 +48,21 @@ document.addEventListener('DOMContentLoaded', function () {
         let d = new Date();
         time.innerHTML = d.toLocaleTimeString();
     }, 1000);
+
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_2wrkh5q", "template_cp6orma", form)
+            .then(() => {
+                status.innerText = "Thank you for contact!";
+                form.reset();
+            })
+            .catch((error) => {
+                status.innerText = "Failed to send:(";
+            });
+    });
+
 
     startBtn.addEventListener('click', () => {
         startup.volume = 0.3;
@@ -85,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const openFile = document.querySelector(`.open-file[data-id="${id}"]`);
             if (openFile) {
                 openFile.style.display = 'block';
+                putToFront(openFile);
             }
 
             const taskBtn = document.querySelector(`.task[data-id="${id}"]`);
@@ -162,6 +186,24 @@ document.addEventListener('DOMContentLoaded', function () {
         documentfiles.style.display = 'none';
         project2page.style.display = 'block';
     });
+
+    project1page.addEventListener('dblclick', () => {
+        todoapp.style.display = 'block';
+        todopage.style.display = 'block';
+
+        // lazy, fix that
+        portfolio1Page.style.display = 'none';
+    });
+
+    portfolio1btn.addEventListener('dblclick', () => {
+        todoapp.style.display = 'block';
+        portfolio1Page.style.display = 'block';
+
+        // lazy, fix that
+        todopage.style.display = 'none';
+    });
+
+
 
 
     desktop.addEventListener('mousedown', (e) => {
@@ -266,3 +308,4 @@ function dragElement(el) {
         document.onmousemove = null;
     }
 }
+
