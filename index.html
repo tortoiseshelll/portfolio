@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <link rel="icon" href="assets/icons/clippy-reverb.gif">
+
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 
 <body>
-
-    <!-- <section id="login-screen"> -->
-
-    </section>
 
     <section id="desktop-screen">
         <div id="selection"></div>
@@ -30,7 +28,7 @@
                 <p class="p">Documents</p>
             </button>
 
-            <button class="file" id="">
+            <button class="file" id="contact-file" data-id="contact">
                 <img src="assets/icons/netmeeting.png" alt="">
                 <p class="p">Contact</p>
             </button>
@@ -129,15 +127,17 @@
 
                             <p>
                                 For me, coding is much more than just few lines of simple logic, as it opens a lot of
-                                opportunities to people like me, who love learning new challenging things. I’m
-                                passionate about building things from scratch, experimenting with new technologies, and
-                                constantly expanding my skill set through new projects.
+                                opportunities to people like me, who love learning new challenging things. I am
+                                passionate about everything related to technology and design, including UI/UX and
+                                software engineering, building things from scratch, experimenting with new technologies,
+                                and constantly expanding my skill set through new projects.
                             </p>
 
                             <p>
-                                Something about me is that I am a big cat lover and a big retro fan as it can be seen by
-                                this interactive portfolio inspired by windows 98 that I coded myself. On the left, in
-                                the documents tab can be seen projects that I coded during my free time.
+                                In addition to my love for technology, I am also a big cat lover and a big retro fan as
+                                it can be seen by this interactive portfolio inspired by windows 98 that I coded myself.
+                                On the left, in the documents tab there can be seen projects that I coded during my free
+                                time.
                             </p>
 
                             <p>
@@ -287,7 +287,7 @@
 
             </div>
 
-            <div class="open-file notes" id="todoapp">
+            <div class="open-file notes" id="todoapp" data-id="notepad">
                 <div class="topbar">
 
                     <img src="assets/icons/notepad.png" alt="">
@@ -361,7 +361,7 @@
                 </div>
             </div>
 
-            <div class="open-file notes" id="contact-page">
+            <div class="open-file notes" id="contact-page" data-id="contact">
                 <div class="topbar">
 
                     <img src="assets/icons/netmeeting.png" alt="">
@@ -430,9 +430,15 @@
 
         <div id="taskbar">
             <div class="taskbtns">
+
                 <button class="task" id="start">
                     <img src="assets/icons/start.png" alt="">
                     <p>Start</p>
+                </button>
+
+                <button class="task" id="mycomputer">
+                    <img src="assets/icons/my_computer.png" alt="">
+                    <p>My Computer</p>
                 </button>
 
                 <button class="task" id="explorer" data-id="explorer">
@@ -445,19 +451,14 @@
                     <p>Documents</p>
                 </button>
 
-                <button class="task" id="mycomputer">
-                    <img src="assets/icons/my_computer.png" alt="">
-                    <p>My Computer</p>
-                </button>
-
-                <button class="task" id="notepad">
-                    <img src="assets/icons/notepad.png" alt="">
-                    <p>Notepad</p>
-                </button>
-
-                <button class="task" id="netmeeting">
+                <button class="task" id="netmeeting" data-id="contact">
                     <img src="assets/icons/netmeeting.png" alt="">
                     <p>Contact</p>
+                </button>
+
+                <button class="task" id="notepad" data-id="notepad">
+                    <img src="assets/icons/notepad.png" alt="">
+                    <p>Notepad</p>
                 </button>
 
             </div>

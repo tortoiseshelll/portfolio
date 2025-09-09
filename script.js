@@ -125,6 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const openFile = document.querySelector(`.open-file[data-id="${id}"]`);
             if (openFile) {
                 openFile.style.display = 'block';
+                taskbtn.style.display = 'flex !important';
                 putToFront(openFile);
             }
         });
