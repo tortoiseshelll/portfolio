@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/portfolio2026/",
+  base: "/portfolio/",
   plugins: [react(), tailwindcss()],
   server: {
     allowedHosts: ["leontine-stipellate-remunerably.ngrok-free.dev"],
