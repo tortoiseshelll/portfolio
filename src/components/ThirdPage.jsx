@@ -53,7 +53,10 @@ const ThirdPage = ({ targetRef }) => {
             className="relative left-5 lg:left-0 lg:-top-24 w-44
             lg:w-60 xl:w-80 border border-black"
           >
-            <img src="portfolio\src\assets\programming\chattingapp\1.png" alt="" />
+            <img
+              src="portfolio\src\assets\programming\chattingapp\1.png"
+              alt=""
+            />
           </motion.div>
           <motion.div
             initial={{ rotate: 0 }}
@@ -71,7 +74,10 @@ const ThirdPage = ({ targetRef }) => {
             className="relative left-5 z-10 -top-2 lg:-left-20 lg:-top-24 w-44
             lg:w-60 xl:w-80 border border-black"
           >
-            <img src="portfolio\src\assets\programming\chattingapp\messages.gif" alt="" />
+            <img
+              src="portfolio\assets\programming\chattingapp\messages.gif"
+              alt=""
+            />
           </motion.div>
         </div>
       </div>
@@ -81,7 +87,10 @@ const ThirdPage = ({ targetRef }) => {
           className="relative top-10 border
          border-black"
         >
-          <img src="portfolio\src\assets\programming\chattingapp\overview.gif" alt="" />
+          <img
+            src="portfolio\src\assets\programming\chattingapp\overview.gif"
+            alt=""
+          />
         </div>
       </div>
 
