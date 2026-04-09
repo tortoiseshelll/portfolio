@@ -40,16 +40,16 @@ function App() {
 
         {/* <FinanceAppPage targetRef={section7Ref} /> */}
 
-        {/* <ThirdPage targetRef={section3Ref} /> */}
+        <ThirdPage targetRef={section3Ref} />
 
-        {/* <FourthPage targetRef={section4Ref} />
+        <FourthPage targetRef={section4Ref} />
 
         <FifthPage targetRef={section5Ref} />
 
         <SixthPage targetRef={section6Ref} />
 
         <Topbtn targetRef={section1Ref} />
-        <ContactBtn targetRef={section6Ref} /> */}
+        <ContactBtn targetRef={section6Ref} />
       </section>
 
       <footer className="footer sm:footer-horizontal footer-center bg-zinc-900 text-base-content p-4">
