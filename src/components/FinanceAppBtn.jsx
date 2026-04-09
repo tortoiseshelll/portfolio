@@ -15,7 +15,7 @@ const FinanceAppBtn = ({ targetRef }) => {
           transition: { duration: 1 },
         }}
         whileTap={{ scale: 0.9 }}
-        className="h-28 w-48 lg:h-40 lg:w-64 bg-[url('portfolio/assets/programming/financetracker/1.jpg')] 
+        className="h-28 w-48 lg:h-40 lg:w-64 bg-[url('./assets/programming/financetracker/1.jpg')] 
             bg-cover border border-black rounded-xl
             hover:border-white hover:cursor-pointer"
       ></motion.div>

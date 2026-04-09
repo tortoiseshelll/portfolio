@@ -6,7 +6,7 @@ const FinanceAppPage = ({ targetRef }) => {
     <section className="relative min-h-full md:min-h-screen">
       <div
         ref={targetRef}
-        className="absolute inset-0 bg-[url('portfolio/assets/bg2.png')] bg-contain rotate-180 "
+        className="absolute inset-0 bg-[url('./assets/bg2.png')] bg-contain rotate-180 "
       >
         <div className="absolute h-full w-screen bg-slate-800/50"></div>
       </div>
@@ -21,7 +21,7 @@ const FinanceAppPage = ({ targetRef }) => {
           className="relative top-10 border
          border-black"
         >
-          <img src="portfolio\src\assets\programming\financetracker\1.jpg" alt="" />
+          <img src=".\src\assets\programming\financetracker\1.jpg" alt="" />
         </div>
       </div>
 
@@ -60,25 +60,25 @@ const FinanceAppPage = ({ targetRef }) => {
               >
                 <div id="item1" className="carousel-item w-full">
                   <img
-                    src="portfolio\src\assets\programming\financetracker\1.jpg"
+                    src=".\src\assets\programming\financetracker\1.jpg"
                     className="w-full"
                   />
                 </div>
                 <div id="item2" className="carousel-item w-full">
                   <img
-                    src="portfolio\src\assets\programming\financetracker\2.jpg"
+                    src=".\src\assets\programming\financetracker\2.jpg"
                     className="w-full"
                   />
                 </div>
                 <div id="item3" className="carousel-item w-full">
                   <img
-                    src="portfolio\src\assets\programming\financetracker\3.jpg"
+                    src=".\src\assets\programming\financetracker\3.jpg"
                     className="w-full"
                   />
                 </div>
                 <div id="item4" className="carousel-item w-full">
                   <img
-                    src="portfolio\src\assets\programming\financetracker\4.jpg"
+                    src=".\src\assets\programming\financetracker\4.jpg"
                     className="w-full"
                   />
                 </div>
@@ -144,7 +144,7 @@ const FinanceAppPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="portfolio/src/assets/programming/chattingapp/online.gif"
+                src="./src/assets/programming/chattingapp/online.gif"
                 alt=""
               />
             </div>
@@ -168,7 +168,7 @@ const FinanceAppPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="portfolio/src/assets/programming/chattingapp/search.gif"
+                src="./src/assets/programming/chattingapp/search.gif"
                 alt=""
               />
             </div>
@@ -182,7 +182,7 @@ const FinanceAppPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="portfolio/src/assets/programming/chattingapp/requests.gif"
+                src="./src/assets/programming/chattingapp/requests.gif"
                 alt=""
               />
             </div>
@@ -205,7 +205,7 @@ const FinanceAppPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="portfolio/src/assets/programming/chattingapp/removefriend.gif"
+                src="./src/assets/programming/chattingapp/removefriend.gif"
                 alt=""
               />
             </div>
@@ -219,7 +219,7 @@ const FinanceAppPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="portfolio/src/assets/programming/chattingapp/pfpchange.gif"
+                src="./src/assets/programming/chattingapp/pfpchange.gif"
                 alt=""
               />
             </div>
@@ -241,7 +241,7 @@ const FinanceAppPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="portfolio/src/assets/programming/chattingapp/options.gif"
+                src="./src/assets/programming/chattingapp/options.gif"
                 alt=""
               />
             </div>

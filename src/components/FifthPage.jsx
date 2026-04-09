@@ -6,7 +6,7 @@ const FifthPage = ({ targetRef }) => {
     <section className="relative min-h-full md:min-h-screen lg:pt-80">
       <div
         ref={targetRef}
-        className="absolute inset-0 bg-[url('portfolio/assets/bg2.png')] bg-contain rotate-180 "
+        className="absolute inset-0 bg-[url('./assets/bg2.png')] bg-contain rotate-180 "
       >
         <div className="absolute h-full w-screen bg-slate-800/50"></div>
       </div>
@@ -16,7 +16,7 @@ const FifthPage = ({ targetRef }) => {
           className="relative top-10 w-96 lg:w-2/5 border
             border-white"
         >
-          <img src="portfolio\src\assets\windows98\1.png" alt="" />
+          <img src=".\assets\windows98\1.png" alt="" />
         </div>
       </div>
 
@@ -53,7 +53,7 @@ const FifthPage = ({ targetRef }) => {
             <div className="mt-8 md:mt-5 z-30">
               <img
                 className="border border-white"
-                src="portfolio\src\assets\windows98\2.png"
+                src=".\assets\windows98\2.png"
                 alt=""
               />
             </div>
@@ -77,7 +77,7 @@ const FifthPage = ({ targetRef }) => {
             <div className="mt-8 md:mt-5 z-30">
               <img
                 className="border border-white"
-                src="portfolio\src\assets\windows98\3.png"
+                src=".\assets\windows98\3.png"
                 alt=""
               />
             </div>
@@ -90,7 +90,7 @@ const FifthPage = ({ targetRef }) => {
             <div className="mt-8 md:mt-5 z-30">
               <img
                 className="border border-white"
-                src="portfolio\src\assets\windows98\4.png"
+                src=".\assets\windows98\4.png"
                 alt=""
               />
             </div>
@@ -109,7 +109,7 @@ const FifthPage = ({ targetRef }) => {
             <div className="flex justify-center mt-8 z-30">
               <img
                 className="border border-white"
-                src="portfolio\src\assets\windows98\5.png"
+                src=".\assets\windows98\5.png"
                 alt=""
               />
             </div>
@@ -132,7 +132,7 @@ const FifthPage = ({ targetRef }) => {
             <div className="flex justify-center z-30 ">
               <img
                 className="border border-white"
-                src="portfolio\src\assets\windows98\6.png"
+                src=".\assets\windows98\6.png"
                 alt=""
               />
             </div>

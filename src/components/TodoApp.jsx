@@ -15,7 +15,7 @@ const TodoApp = ({ targetRef }) => {
           transition: { duration: 1 },
         }}
         whileTap={{ scale: 0.9 }}
-        className="h-28 w-48 lg:h-40 lg:w-64 bg-[url('portfolio/assets/noteapp/1.png')] 
+        className="h-28 w-48 lg:h-40 lg:w-64 bg-[url('./assets/noteapp/1.png')] 
               bg-cover border rounded-xl border-black hover:border-white hover:cursor-pointer"
       ></motion.div>
       <div className="flex flex-col pl-10 self-center lg:self-auto lg:pl-0 hover:cursor-pointer">
