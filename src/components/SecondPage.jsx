@@ -4,12 +4,18 @@ import TodoApp from "./TodoApp";
 import Windows98 from "./Windows98";
 import FinanceAppBtn from "./FinanceAppBtn";
 
-const SecondPage = ({ targetRef, section3Ref, section4Ref, section5Ref, section7Ref }) => {
+const SecondPage = ({
+  targetRef,
+  section3Ref,
+  section4Ref,
+  section5Ref,
+  section7Ref,
+}) => {
   return (
     <section className="relative min-h-full  md:min-h-screen">
       <div
         ref={targetRef}
-        className="absolute inset-0 bg-[url('portfolio/assets/bg2.png')] bg-contain "
+        className="absolute inset-0 bg-[url('portfolio/dist/assets/bg2.png')] bg-contain "
         style={{
           maskImage: "linear-gradient(to top, black 0%, transparent 100%)",
         }}
@@ -72,8 +78,7 @@ const SecondPage = ({ targetRef, section3Ref, section4Ref, section5Ref, section7
           }}
           className="flex flex-col xl:flex-row gap-5 lg:gap-10 lg:pb-60 px-10"
         >
-
-          <FinanceAppBtn  />
+          <FinanceAppBtn />
 
           <ChattingAppBtn targetRef={section3Ref} />
 
