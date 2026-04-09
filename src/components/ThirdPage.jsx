@@ -6,7 +6,7 @@ const ThirdPage = ({ targetRef }) => {
     <section className="relative min-h-full md:min-h-screen">
       <div
         ref={targetRef}
-        className="absolute inset-0 bg-[url('./assets/bg2.png')] bg-contain rotate-180 "
+        className="absolute inset-0 bg-[url('portfolio/assets/bg2.png')] bg-contain rotate-180 "
       >
         <div className="absolute h-full w-screen bg-slate-800/50"></div>
       </div>
@@ -33,7 +33,7 @@ const ThirdPage = ({ targetRef }) => {
             lg:w-60 xl:w-80 border border-black"
           >
             <img
-              src="src\assets\programming\chattingapp\pfpchange.gif"
+              src="portfolio\src\assets\programming\chattingapp\pfpchange.gif"
               alt=""
             />
           </motion.div>
@@ -53,7 +53,7 @@ const ThirdPage = ({ targetRef }) => {
             className="relative left-5 lg:left-0 lg:-top-24 w-44
             lg:w-60 xl:w-80 border border-black"
           >
-            <img src="src\assets\programming\chattingapp\1.png" alt="" />
+            <img src="portfolio\src\assets\programming\chattingapp\1.png" alt="" />
           </motion.div>
           <motion.div
             initial={{ rotate: 0 }}
@@ -71,7 +71,7 @@ const ThirdPage = ({ targetRef }) => {
             className="relative left-5 z-10 -top-2 lg:-left-20 lg:-top-24 w-44
             lg:w-60 xl:w-80 border border-black"
           >
-            <img src="src\assets\programming\chattingapp\messages.gif" alt="" />
+            <img src="portfolio\src\assets\programming\chattingapp\messages.gif" alt="" />
           </motion.div>
         </div>
       </div>
@@ -81,7 +81,7 @@ const ThirdPage = ({ targetRef }) => {
           className="relative top-10 border
          border-black"
         >
-          <img src="src\assets\programming\chattingapp\overview.gif" alt="" />
+          <img src="portfolio\src\assets\programming\chattingapp\overview.gif" alt="" />
         </div>
       </div>
 
@@ -204,7 +204,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="src/assets/programming/chattingapp/online.gif"
+                src="portfolio/src/assets/programming/chattingapp/online.gif"
                 alt=""
               />
             </div>
@@ -228,7 +228,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="src/assets/programming/chattingapp/search.gif"
+                src="portfolio/src/assets/programming/chattingapp/search.gif"
                 alt=""
               />
             </div>
@@ -242,7 +242,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="src/assets/programming/chattingapp/requests.gif"
+                src="portfolio/src/assets/programming/chattingapp/requests.gif"
                 alt=""
               />
             </div>
@@ -265,7 +265,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="src/assets/programming/chattingapp/removefriend.gif"
+                src="portfolio/src/assets/programming/chattingapp/removefriend.gif"
                 alt=""
               />
             </div>
@@ -279,7 +279,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="src/assets/programming/chattingapp/pfpchange.gif"
+                src="portfolio/src/assets/programming/chattingapp/pfpchange.gif"
                 alt=""
               />
             </div>
@@ -301,7 +301,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="src/assets/programming/chattingapp/options.gif"
+                src="portfolio/src/assets/programming/chattingapp/options.gif"
                 alt=""
               />
             </div>
