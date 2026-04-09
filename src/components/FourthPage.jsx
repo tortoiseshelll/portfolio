@@ -18,7 +18,7 @@ const FourthPage = ({ targetRef }) => {
           className="relative top-20 w-96 lg:w-auto border
          border-black "
         >
-          <img src=".\src\assets\programming/todonotes/todo1.jpg" alt="" />
+          <img src=".\assets\programming/todonotes/todo1.jpg" alt="" />
         </div>
       </div>
 
@@ -49,7 +49,7 @@ const FourthPage = ({ targetRef }) => {
             >
               <div
                 className="w-96 h-60 lg:h-80 bg-cover border border-black
-          rounded-xl bg-[url(./src/assets/programming/todonotes/todo2.jpg)]"
+          rounded-xl bg-[url(./assets/programming/todonotes/todo2.jpg)]"
               ></div>
 
               <p className="text-sm w-80 lg:w-1/2 ml-5 lg:text-lg pt-5 leading-9 lg:leading-10">
@@ -70,7 +70,7 @@ const FourthPage = ({ targetRef }) => {
           >
             <div
               className="w-48 h-60 lg:h-80 lg:w-56 bg-cover border border-black
-          rounded-xl bg-[url(./src/assets/programming/todonotes/todo3.jpg)]"
+          rounded-xl bg-[url(./assets/programming/todonotes/todo3.jpg)]"
             ></div>
 
             <p className="text-sm w-80 lg:w-1/2 ml-5 lg:text-lg pt-5 leading-9 lg:leading-10">
@@ -91,14 +91,14 @@ const FourthPage = ({ targetRef }) => {
 
             <div
               className="w-48 h-60 lg:h-80 lg:w-56 bg-cover border border-black
-          rounded-xl bg-[url(./src/assets/programming/todonotes/todo4.jpg)]"
+          rounded-xl bg-[url(./assets/programming/todonotes/todo4.jpg)]"
             ></div>
           </div>
 
           <div className="relative flex justify-center items-center mt-5 lg:mt-10">
             <div
               className="w-48 h-60 lg:h-80 lg:w-56 bg-cover border border-black
-          rounded-xl bg-[url(./src/assets/programming/todonotes/todo5.jpg)]"
+          rounded-xl bg-[url(./assets/programming/todonotes/todo5.jpg)]"
             ></div>
 
             <p className="text-sm w-80 lg:w-1/2 ml-5 lg:text-lg pt-5 leading-9 lg:leading-10">

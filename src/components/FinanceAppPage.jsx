@@ -144,7 +144,7 @@ const FinanceAppPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="./src/assets/programming/chattingapp/online.gif"
+                src="./assets/programming/chattingapp/online.gif"
                 alt=""
               />
             </div>
@@ -168,7 +168,7 @@ const FinanceAppPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="./src/assets/programming/chattingapp/search.gif"
+                src="./assets/programming/chattingapp/search.gif"
                 alt=""
               />
             </div>
