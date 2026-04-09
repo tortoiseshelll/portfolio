@@ -1,4 +1,5 @@
 import { useRef } from "react";
+
 import MainPage from "./components/MainPage";
 import SecondPage from "./components/SecondPage";
 import ThirdPage from "./components/ThirdPage";
@@ -28,18 +29,18 @@ function App() {
       >
         <MainPage targetRef={section1Ref} section2Ref={section2Ref} />
 
-        <SecondPage
+        {/* <SecondPage
           targetRef={section2Ref}
           section3Ref={section3Ref}
           section4Ref={section4Ref}
           section5Ref={section5Ref}
           section6Ref={section6Ref}
           section7Ref={section7Ref}
-        />
+        /> */}
 
         {/* <FinanceAppPage targetRef={section7Ref} /> */}
 
-        <ThirdPage targetRef={section3Ref} />
+        {/* <ThirdPage targetRef={section3Ref} />
 
         <FourthPage targetRef={section4Ref} />
 
@@ -48,7 +49,7 @@ function App() {
         <SixthPage targetRef={section6Ref} />
 
         <Topbtn targetRef={section1Ref} />
-        <ContactBtn targetRef={section6Ref} />
+        <ContactBtn targetRef={section6Ref} /> */}
       </section>
 
       <footer className="footer sm:footer-horizontal footer-center bg-zinc-900 text-base-content p-4">
