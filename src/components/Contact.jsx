@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import "portfolio/src/assets/contact.css";
+import "src/assets/contact.css";
 
 const Contact = () => {
   const form = useRef();
@@ -12,7 +12,7 @@ const Contact = () => {
         "service_2wrkh5q",
         "template_cp6orma",
         form.current,
-        "k0aQ_On8QwR3ieYZf"
+        "k0aQ_On8QwR3ieYZf",
       )
       .then(() => {
         alert("Thank you for contact!");
