@@ -7,7 +7,7 @@ const MainPage = ({ targetRef, section2Ref }) => {
   return (
     <section className="relative h-screen" ref={targetRef}>
       <div
-        className="absolute inset-0 bg-[url('../dist/assets/bg.jpg')] bg-cover bg-center"
+        className="absolute inset-0 bg-[url('portfolio/assets/bg.jpg')] bg-cover bg-center"
         style={{
           maskImage: "linear-gradient(to bottom, black 0%, transparent 100%)",
         }}
