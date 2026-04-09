@@ -33,7 +33,7 @@ const ThirdPage = ({ targetRef }) => {
             lg:w-60 xl:w-80 border border-black"
           >
             <img
-              src=".\src\assets\programming\chattingapp\pfpchange.gif"
+              src=".\assets\programming\chattingapp\pfpchange.gif"
               alt=""
             />
           </motion.div>
@@ -54,7 +54,7 @@ const ThirdPage = ({ targetRef }) => {
             lg:w-60 xl:w-80 border border-black"
           >
             <img
-              src=".\src\assets\programming\chattingapp\1.png"
+              src=".\assets\programming\chattingapp\1.png"
               alt=""
             />
           </motion.div>
@@ -88,7 +88,7 @@ const ThirdPage = ({ targetRef }) => {
          border-black"
         >
           <img
-            src=".\src\assets\programming\chattingapp\overview.gif"
+            src=".\assets\programming\chattingapp\overview.gif"
             alt=""
           />
         </div>
@@ -213,7 +213,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="./src/assets/programming/chattingapp/online.gif"
+                src="./assets/programming/chattingapp/online.gif"
                 alt=""
               />
             </div>
@@ -237,7 +237,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="./src/assets/programming/chattingapp/search.gif"
+                src="./assets/programming/chattingapp/search.gif"
                 alt=""
               />
             </div>
@@ -251,7 +251,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="./src/assets/programming/chattingapp/requests.gif"
+                src="./assets/programming/chattingapp/requests.gif"
                 alt=""
               />
             </div>
@@ -274,7 +274,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="./src/assets/programming/chattingapp/removefriend.gif"
+                src="./assets/programming/chattingapp/removefriend.gif"
                 alt=""
               />
             </div>
@@ -288,7 +288,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="./src/assets/programming/chattingapp/pfpchange.gif"
+                src="./assets/programming/chattingapp/pfpchange.gif"
                 alt=""
               />
             </div>
@@ -310,7 +310,7 @@ const ThirdPage = ({ targetRef }) => {
               <img
                 className="border border-black
           rounded-xl"
-                src="./src/assets/programming/chattingapp/options.gif"
+                src="./assets/programming/chattingapp/options.gif"
                 alt=""
               />
             </div>
