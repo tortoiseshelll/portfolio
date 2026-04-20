@@ -11,64 +11,44 @@ const FifthPage = ({ targetRef }) => {
         <div className="absolute h-full w-screen bg-slate-800/50"></div>
       </div>
 
-      <div className="relative flex justify-center pt-16 lg:pt-0 left-10 lg:left-20">
-        <div
-          className="relative top-10 w-96 lg:w-2/5 border
-            border-white"
-        >
-          <img src=".\assets\windows98\1.png" alt="" />
+      <div className="relative lg:mx-40 2xl:mx-80 flex-1 -top-80 justify-center bg-black/50">
+        <div className="relative flex justify-center xl:top-20 gap-4">
+          <div
+            className="relative top-20 w-96 lg:w-auto border
+         border-black "
+          >
+            <img src=".\assets\windows98\1.png" alt="" />
+          </div>
         </div>
-      </div>
 
-      <div className="relative justify-center lg:flex-1 lg:ml-auto lg:mr-auto xl:w-4/5 mx-5 px-10 lg:px-20">
-        <div
-          className="relative flex flex-col justify-center
-         md:w-4/5 mx-auto"
-        >
-          <div className="mt-8 md:ml-36 md:mt-10 lg:ml-10 z-30">
-            <p className="text-3xl lg:text-5xl font-bold text-zinc-200">
+        <div className="relative lg:flex-1 lg:ml-auto lg:mr-auto xl:w-4/5 px-10">
+          <div
+            className="relative flex flex-col justify-center 
+       top-24"
+          >
+            <p className="text-3xl lg:text-5xl font-bold text-zinc-200 lg:ml-10">
               Windows98
             </p>
 
-            <p className="text-xl lg:text-2xl pt-2 text-zinc-200 font-bold lg:ml-2 italic">
+            <p className="text-xl lg:text-2xl pt-2 text-zinc-200 font-bold lg:ml-12 italic">
               Simulator Website
             </p>
-          </div>
 
-          <p className="text-md lg:text-lg pt-5 leading-9 lg:leading-10">
-            This simulator website was based on Windows 98 design. It was
-            created as the very first web project to understand the basic
-            fundamentals of HTML CSS and JavaScript. The website uses no
-            frameworks, as it was mainly to challenge my abilities. This website
-            features Windows 98 Desktop, along with selection tool notes app,
-            internet explorer, files, and task bar.
-          </p>
-        </div>
-
-        <div className="">
-          <div
-            className="relative flex flex-col lg:flex-row lg:gap-10 justify-center
-         md:w-4/5 mx-auto"
-          >
-            <div className="mt-8 md:mt-5 z-30">
-              <img
-                className="border border-white"
-                src=".\assets\windows98\2.png"
-                alt=""
-              />
-            </div>
-
-            <p className="text-md lg:text-lg pt-5 leading-9 lg:leading-10 self-center xl:w-1/2">
-              The website includes different apps such as notes app or file
-              folder, both functional and designed carefully.
+            <p className="text-md lg:text-lg pt-5 leading-9 lg:leading-10">
+              This simulator website was based on Windows 98 design. It was
+              created as the very first web project to understand the basic
+              fundamentals of HTML CSS and JavaScript. The website uses no
+              frameworks, as it was mainly to challenge my abilities. This
+              website features Windows 98 Desktop, along with selection tool
+              notes app, internet explorer, files, and task bar.
             </p>
           </div>
 
           <div
             className="relative flex flex-col lg:flex-row lg:gap-10 justify-center
-         md:w-4/5 mx-auto md:mt-10"
+          mx-auto md:mt-10"
           >
-            <p className="text-md lg:text-lg pt-5 leading-9 lg:leading-10 self-center xl:w-1/2">
+            <p className="text-md lg:text-lg pt-5 leading-9 lg:leading-10 self-center xl:w-2/3">
               Each individual window can be opened and closed with a close
               button or minimise button. The windows also can be dragged across
               the screen to work exactly like the real applications.

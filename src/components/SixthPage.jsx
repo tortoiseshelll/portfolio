@@ -10,9 +10,10 @@ const SixthPage = ({ targetRef }) => {
       >
         <div className="absolute h-full w-screen bg-slate-800/50"></div>
       </div>
-
-      <div className="relative pt-40 md:pt-0 md:-mt-48">
-        <Contact />
+      <div className="relative lg:mx-40 2xl:mx-80  flex-1 justify-center bg-black/50">
+        <div className="relative  md:pt-0 mt-[-640px] pb-96">
+          <Contact />
+        </div>
       </div>
     </section>
   );

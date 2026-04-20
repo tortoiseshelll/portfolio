@@ -6,12 +6,12 @@ const MainPage = ({ targetRef, section2Ref }) => {
   return (
     <section className="relative h-screen" ref={targetRef}>
       <div
-        className="absolute inset-0 bg-[url('./assets/bg.jpg')] bg-cover bg-center"
+        className="absolute inset-0 bg-[url('./assets/moon.jpg')] bg-cover bg-center"
         style={{
           maskImage: "linear-gradient(to bottom, black 0%, transparent 100%)",
         }}
       >
-        <div className="absolute h-screen w-screen backdrop-blur-sm"></div>
+        <div className="absolute h-screen w-screen backdrop-blur-"></div>
       </div>
 
       <div
@@ -50,7 +50,7 @@ const MainPage = ({ targetRef, section2Ref }) => {
           </h2>
         </div>
         <h3
-          className="absolute z-0 text-5xl md:text-8xl text-zinc-200/5 
+          className="absolute z-0 text-5xl md:text-8xl text-zinc-200/20 
             select-none font-bold tracking-widest"
         >
           Wiktoria<span className="pl-5">Czuba</span>

@@ -15,7 +15,7 @@ const SecondPage = ({
     <section className="relative min-h-full  md:min-h-screen">
       <div
         ref={targetRef}
-        className="absolute inset-0 bg-[url('./assets/bg2.png')] bg-contain "
+        className="absolute inset-0 bg-[url('./assets/bg0.jpg')] bg-contain "
         style={{
           maskImage: "linear-gradient(to top, black 0%, transparent 100%)",
         }}

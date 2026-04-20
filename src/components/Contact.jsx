@@ -24,8 +24,8 @@ const Contact = () => {
 
   return (
     <section className="relative flex-col">
-      <div className="flex justify-center -mt-20 mb-10">
-        <h2 className="text-3xl lg:text-5xl font-bold text-zinc-300">
+      <div className="flex justify-center pt-80 md:pt-96 ">
+        <h2 className="text-3xl lg:text-5xl pb-20 font-bold text-zinc-300">
           Contact
         </h2>
       </div>
